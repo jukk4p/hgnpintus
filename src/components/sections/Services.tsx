@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Brush, Building2, Factory, Droplets } from "lucide-react";
@@ -67,7 +68,7 @@ export function Services() {
                     <Icon size={24} />
                   </div>
                 </div>
-                <h3 className="text-sm sm:text-base font-black uppercase mb-3 tracking-tighter leading-tight">
+                <h3 className="text-sm font-black uppercase mb-3 tracking-tighter leading-tight break-keep">
                   {service.title}
                 </h3>
                 <p className="text-accent font-medium leading-relaxed text-sm">
