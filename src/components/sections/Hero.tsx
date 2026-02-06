@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section className="relative min-h-[90vh] w-full overflow-hidden flex items-center border-b-4 border-black">
       <div className="absolute inset-0 z-0">
-        {heroImage?.imageUrl && (
+        {heroImage?.imageUrl ? (
           <Image
             src={heroImage.imageUrl}
             alt={heroImage.description}
@@ -19,6 +19,8 @@ export function Hero() {
             priority
             data-ai-hint="vertical painter"
           />
+        ) : (
+          <div className="absolute inset-0 bg-accent" />
         )}
         <div className="absolute inset-0 hero-overlay" />
       </div>
@@ -35,16 +37,16 @@ export function Hero() {
               Líderes en Coria del Río y Sevilla. Rehabilitación de fachadas, pintura industrial y trabajos verticales sin andamios.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button asChild size="lg" className="h-16 px-8 text-xl font-black brutalist-border uppercase bg-primary hover:bg-primary/90">
+              <Button asChild size="lg" className="h-16 px-8 text-xl font-black brutalist-border uppercase bg-primary hover:bg-primary/90 rounded-none">
                 <a href="#contacto">Solicitar Presupuesto</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="h-16 px-8 text-xl font-black brutalist-border uppercase bg-white text-black hover:bg-gray-100">
+              <Button asChild size="lg" variant="outline" className="h-16 px-8 text-xl font-black brutalist-border uppercase bg-white text-black hover:bg-gray-100 rounded-none border-black">
                 <a href="/servicios">Nuestros Servicios</a>
               </Button>
             </div>
           </div>
 
-          <div className="hidden lg:block brutalist-border overflow-hidden h-[400px] relative bg-white">
+          <div className="hidden lg:block brutalist-border overflow-hidden h-[400px] relative bg-white border-black">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12702.483!2d-5.95!3d37.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
               width="100%"

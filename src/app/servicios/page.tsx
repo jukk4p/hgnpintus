@@ -21,7 +21,7 @@ const allServices = [
   {
     title: "PINTURA GENERAL",
     category: "Interior/Exterior",
-    description: "Servicios integrales para casas, pisos y locales comerciales. Especialistas en alisado de paredes (quitar gotelé) y acabados plásticos de alta calidad.",
+    description: "Servicios integrales para casas, pisos y locales comerciales en Sevilla. Especialistas en alisado de paredes (quitar gotelé) y acabados plásticos de máxima calidad.",
     price: "~15€/m²",
     icon: Brush,
     imageId: "service-general",
@@ -29,7 +29,7 @@ const allServices = [
   {
     title: "PINTURA INDUSTRIAL",
     category: "Naves y Fábricas",
-    description: "Soluciones de alta resistencia para naves industriales y suelos epoxi. Pinturas preparadas para soportar alta abrasión y productos químicos.",
+    description: "Soluciones de alta resistencia para naves industriales y suelos epoxi. Pinturas preparadas para soportar alta abrasión, tráfico pesado y agentes químicos.",
     price: "~20€/m²",
     icon: Hammer,
     imageId: "service-industrial",
@@ -37,7 +37,7 @@ const allServices = [
   {
     title: "PINTURA DECORATIVA",
     category: "Alta Decoración",
-    description: "Expertos en estucos, rústicos, veladuras y esponjados. Transformamos tus espacios en obras de arte con las últimas tendencias decorativas.",
+    description: "Expertos en estucos, rústicos, veladuras y esponjados. Transformamos tus espacios en obras de arte siguiendo las últimas tendencias en decoración de interiores.",
     price: "~25€/m²",
     icon: Palette,
     imageId: "service-decorativa",
@@ -45,7 +45,7 @@ const allServices = [
   {
     title: "IMPERMEABILIZACIONES",
     category: "Tejados y Terrazas",
-    description: "Eliminamos goteras de raíz. Aplicación de cauchos, poliuretanos y pinturas anticongelantes con garantía total de estanqueidad.",
+    description: "Eliminamos goteras de raíz. Aplicación de cauchos, poliuretanos y pinturas anticongelantes con garantía total de estanqueidad y durabilidad certificada.",
     price: "~18€/m²",
     icon: Droplets,
     imageId: "service-impermeabilizacion",
@@ -53,7 +53,7 @@ const allServices = [
   {
     title: "REHABILITACIÓN FACHADAS",
     category: "Edificios",
-    description: "Cumplimiento de la ITE. Reparación de grietas, saneamiento de paramentos y pintura acrílica de larga duración para comunidades.",
+    description: "Cumplimiento de la ITE. Reparación de grietas, saneamiento de paramentos y pintura acrílica de larga duración para comunidades de vecinos y bloques.",
     price: "~22€/m²",
     icon: Building2,
     imageId: "service-fachada",
@@ -61,7 +61,7 @@ const allServices = [
   {
     title: "TRABAJOS VERTICALES",
     category: "Sin Andamios",
-    description: "Acceso seguro mediante cuerdas para zonas de difícil acceso. Pintura en altura con certificaciones IRATA y máxima seguridad laboral.",
+    description: "Acceso seguro mediante cuerdas para zonas de difícil acceso. Pintura en altura con certificaciones profesionales y máxima seguridad laboral sin andamios.",
     price: "Consulte presupuesto",
     icon: Mountain,
     imageId: "service-vertical",
@@ -69,7 +69,7 @@ const allServices = [
   {
     title: "REFORMAS RÁPIDAS",
     category: "Mantenimiento",
-    description: "Parches urgentes, humedades y pequeños alisados. Presupuesto en 24h para intervenciones inmediatas en su vivienda o local.",
+    description: "Parches urgentes, humedades y pequeños alisados. Presupuesto en menos de 24h para intervenciones inmediatas en su vivienda o local comercial.",
     price: "Económico",
     icon: Zap,
     imageId: "service-reformas",
@@ -77,7 +77,7 @@ const allServices = [
   {
     title: "MANTENIMIENTO COMUNIDADES",
     category: "Servicio Continuo",
-    description: "Planes anuales para portales, escaleras y zonas comunes. Trabajamos sin interrupciones para el bienestar de los vecinos.",
+    description: "Planes anuales para portales, escaleras y zonas comunes. Trabajamos con limpieza y rapidez sin interrupciones para el bienestar de los vecinos.",
     price: "Tarifa plana",
     icon: Users,
     imageId: "service-comunidades",
@@ -92,7 +92,7 @@ export default function ServicesPage() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-16">
-            <h1 className="text-6xl md:text-7xl font-black uppercase tracking-tighter mb-6">
+            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6 leading-[0.9]">
               NUESTROS SERVICIOS <br />
               <span className="text-primary">PROFESIONALES</span>
             </h1>
@@ -101,13 +101,13 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {allServices.map((service, index) => {
               const Icon = service.icon;
               const img = PlaceHolderImages.find(i => i.id === service.imageId);
               return (
-                <div key={index} className="brutalist-card flex flex-col group h-full">
-                  <div className="relative h-48 mb-6 border-2 border-black overflow-hidden shrink-0">
+                <div key={index} className="brutalist-card flex flex-col bg-white hover:border-primary transition-colors h-full group">
+                  <div className="relative aspect-video mb-6 border-2 border-black overflow-hidden shrink-0">
                     {img && (
                       <Image
                         src={img.imageUrl}
@@ -121,21 +121,21 @@ export default function ServicesPage() {
                     </div>
                   </div>
                   
-                  <div className="flex-1 space-y-4">
-                    <div>
+                  <div className="flex-1 flex flex-col">
+                    <div className="mb-4">
                       <span className="text-[10px] font-black uppercase text-primary tracking-widest bg-primary/10 px-2 py-0.5">
                         {service.category}
                       </span>
-                      <h3 className="text-xl font-black uppercase mt-1 leading-tight">
+                      <h3 className="text-lg font-black uppercase mt-1 leading-tight tracking-tighter">
                         {service.title}
                       </h3>
                     </div>
-                    <p className="text-sm font-medium text-accent leading-relaxed">
+                    <p className="text-sm font-medium text-accent leading-relaxed mb-6 line-clamp-4">
                       {service.description}
                     </p>
-                    <div className="pt-4 border-t-2 border-dashed border-black/10 flex justify-between items-center">
-                      <span className="font-black text-sm">{service.price}</span>
-                      <Button asChild size="sm" className="bg-black text-white hover:bg-primary font-black uppercase text-[10px] h-8 px-4">
+                    <div className="mt-auto pt-4 border-t-2 border-dashed border-black/10 flex justify-between items-center">
+                      <span className="font-black text-xs">{service.price}</span>
+                      <Button asChild size="sm" className="bg-black text-white hover:bg-primary font-black uppercase text-[10px] h-8 px-4 brutalist-border rounded-none shadow-none">
                         <a href="/#contacto">Presupuesto</a>
                       </Button>
                     </div>
@@ -149,7 +149,7 @@ export default function ServicesPage() {
 
       <section className="py-24 bg-accent text-white border-y-4 border-black">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-black uppercase mb-8 italic">"Trabajo impecable, rápidos y muy limpios en el portal de nuestra comunidad."</h2>
+          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 italic">"Trabajo impecable, rápidos y muy limpios en el portal de nuestra comunidad."</h2>
           <p className="font-bold opacity-70">— Administrador de Fincas, Coria del Río</p>
         </div>
       </section>
