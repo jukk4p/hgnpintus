@@ -1,12 +1,11 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Hermanos Gómez Novo - Pintores Profesionales en Coria del Río',
-  description: 'Especialistas en pintura profesional, trabajos verticales, reformas rápidas y mantenimiento en Coria del Río, Sevilla. Calidad garantizada.',
+  title: 'Hermanos Gómez Novo Pinturas - Pintores Profesionales en Coria del Río',
+  description: 'Empresa de referencia en pintura profesional, industrial y decorativa en Coria del Río y Sevilla. Rehabilitación de fachadas y impermeabilizaciones.',
   openGraph: {
-    title: 'Hermanos Gómez Novo - Pintura y Reformas',
+    title: 'Hermanos Gómez Novo Pinturas',
     description: 'Expertos en pintura en Sevilla y Coria del Río.',
     images: ['https://picsum.photos/seed/painter-hero/1200/630'],
   }
@@ -24,7 +23,7 @@ export default function RootLayout({
     "image": "https://picsum.photos/seed/painter-hero/800/600",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Calle Real",
+      "streetAddress": "Avenida Blanca Paloma, 60",
       "addressLocality": "Coria del Río",
       "addressRegion": "Sevilla",
       "postalCode": "41100",
@@ -36,13 +35,13 @@ export default function RootLayout({
       "longitude": -6.0527
     },
     "url": "https://hnosgomeznovopinturas.com",
-    "telephone": "+34600000000",
+    "telephone": "+34692303131",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "opens": "08:00",
-        "closes": "18:00"
+        "closes": "20:00"
       }
     ]
   };

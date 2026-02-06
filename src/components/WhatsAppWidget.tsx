@@ -1,11 +1,10 @@
-
 "use client";
 
 import { MessageCircle } from "lucide-react";
 
 export function WhatsAppWidget() {
-  const phoneNumber = "34600000000"; // Placeholder phone
-  const message = encodeURIComponent("Hola! Me gustaría solicitar un presupuesto para un trabajo de pintura.");
+  const phoneNumber = "34692303131"; 
+  const message = encodeURIComponent("Hola! He visto vuestra web y me gustaría solicitar un presupuesto para un trabajo de pintura.");
 
   return (
     <a

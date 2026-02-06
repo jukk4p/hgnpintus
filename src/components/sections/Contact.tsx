@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -26,23 +25,23 @@ export function Contact() {
           <div className="space-y-12">
             <div>
               <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 inline-block border-b-8 border-primary">
-                Contacta con Nosotros
+                Pide Presupuesto
               </h2>
               <p className="text-xl font-bold text-accent max-w-md">
-                ¿Tienes un proyecto en mente? Pídenos presupuesto sin compromiso. Estaremos encantados de ayudarte.
+                Empresa de referencia en el sector. Presupuestos sin compromiso. Nos desplazamos por toda la provincia de Sevilla.
               </p>
             </div>
 
             <div className="space-y-8">
-              <div className="flex items-start gap-6">
-                <div className="bg-primary text-white p-4 border-2 border-black">
+              <a href="tel:+34692303131" className="flex items-start gap-6 group">
+                <div className="bg-primary text-white p-4 border-2 border-black group-hover:bg-accent transition-colors">
                   <Phone size={24} />
                 </div>
                 <div>
                   <h4 className="text-xl font-black uppercase">Teléfono</h4>
-                  <p className="text-lg font-bold text-accent">+34 600 000 000</p>
+                  <p className="text-lg font-bold text-accent">692 303 131</p>
                 </div>
-              </div>
+              </a>
 
               <div className="flex items-start gap-6">
                 <div className="bg-primary text-white p-4 border-2 border-black">
@@ -60,7 +59,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-xl font-black uppercase">Ubicación</h4>
-                  <p className="text-lg font-bold text-accent">Coria del Río, Sevilla</p>
+                  <p className="text-lg font-bold text-accent">Avda. Blanca Paloma, 60<br />41100 Coria del Río, Sevilla</p>
                 </div>
               </div>
             </div>
@@ -78,11 +77,11 @@ export function Contact() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="phone" className="text-sm font-black uppercase">Teléfono</Label>
-                <Input id="phone" placeholder="600 000 000" required className="h-12 border-2 border-black rounded-none focus-visible:ring-primary" />
+                <Input id="phone" placeholder="692 303 131" required className="h-12 border-2 border-black rounded-none focus-visible:ring-primary" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="message" className="text-sm font-black uppercase">Mensaje</Label>
-                <Textarea id="message" placeholder="¿En qué podemos ayudarte?" required className="min-h-[150px] border-2 border-black rounded-none focus-visible:ring-primary" />
+                <Textarea id="message" placeholder="¿En qué podemos ayudarte? (Pintura general, industrial, fachadas...)" required className="min-h-[150px] border-2 border-black rounded-none focus-visible:ring-primary" />
               </div>
               <Button type="submit" size="lg" className="w-full h-16 text-xl font-black uppercase bg-primary hover:bg-primary/90 brutalist-border">
                 Enviar Mensaje <Send className="ml-2" size={20} />

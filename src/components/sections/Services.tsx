@@ -1,33 +1,33 @@
 "use client";
 
-import { Brush, Building2, Hammer, ClipboardCheck } from "lucide-react";
+import { Brush, Building2, Factory, Droplets } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const services = [
   {
-    title: "Pintura Profesional",
-    description: "Interiores y exteriores con acabados impecables y materiales de primera calidad.",
+    title: "Pintura General",
+    description: "Trabajos en todo tipo de superficies, tanto en interior como en exterior con acabados de alta calidad.",
     icon: Brush,
     imageId: "service-pintura",
   },
   {
-    title: "Trabajos Verticales",
-    description: "Especialistas en fachadas y lugares de difícil acceso sin necesidad de andamios.",
+    title: "Fachadas y Edificios",
+    description: "Rehabilitación completa de fachadas y trabajos verticales con personal altamente cualificado.",
     icon: Building2,
     imageId: "service-vertical",
   },
   {
-    title: "Reformas Rápidas",
-    description: "Renovaciones parciales o totales de viviendas y locales comerciales en tiempo récord.",
-    icon: Hammer,
-    imageId: "service-reformas",
+    title: "Pintura Industrial",
+    description: "Soluciones especializadas para naves, locales y maquinaria con pinturas de alta resistencia.",
+    icon: Factory,
+    imageId: "service-industrial",
   },
   {
-    title: "Mantenimiento",
-    description: "Programas de mantenimiento preventivo para comunidades de vecinos y empresas.",
-    icon: ClipboardCheck,
-    imageId: "service-mantenimiento",
+    title: "Impermeabilización",
+    description: "Protección total contra filtraciones en cubiertas, terrazas y azoteas con garantía de durabilidad.",
+    icon: Droplets,
+    imageId: "service-impermeabilizacion",
   },
 ];
 
@@ -37,10 +37,10 @@ export function Services() {
       <div className="container mx-auto px-4">
         <div className="mb-16">
           <h2 className="text-5xl font-black uppercase tracking-tighter mb-4 inline-block border-b-8 border-primary">
-            Nuestros Servicios
+            Nuestras Actividades
           </h2>
           <p className="text-xl font-bold text-accent max-w-2xl mt-4">
-            Ofrecemos soluciones integrales para cualquier tipo de superficie y estructura.
+            Especialistas en todo tipo de trabajos relacionados con el sector de la Pintura Profesional.
           </p>
         </div>
 
@@ -67,10 +67,10 @@ export function Services() {
                     <Icon size={24} />
                   </div>
                 </div>
-                <h3 className="text-lg lg:text-xl font-black uppercase mb-3 tracking-tighter whitespace-normal">
+                <h3 className="text-lg font-black uppercase mb-3 tracking-tighter leading-tight">
                   {service.title}
                 </h3>
-                <p className="text-accent font-medium leading-relaxed">
+                <p className="text-accent font-medium leading-relaxed text-sm">
                   {service.description}
                 </p>
               </div>

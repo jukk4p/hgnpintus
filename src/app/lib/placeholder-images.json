@@ -1,105 +1,104 @@
-
 {
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Professional painter applying red paint to a wall",
+      "description": "Profesionales pintando un edificio moderno",
       "imageUrl": "https://picsum.photos/seed/painter-hero/1920/1080",
-      "imageHint": "painter painting"
+      "imageHint": "painter building"
     },
     {
       "id": "service-pintura",
-      "description": "Interior painting service",
+      "description": "Trabajo de pintura en interiores",
       "imageUrl": "https://picsum.photos/seed/pintura-interior/800/600",
       "imageHint": "interior painting"
     },
     {
       "id": "service-vertical",
-      "description": "Vertical work on building facade",
+      "description": "Rehabilitación de fachada en edificio",
       "imageUrl": "https://picsum.photos/seed/vertical-works/800/600",
-      "imageHint": "vertical worker"
+      "imageHint": "facade renovation"
     },
     {
-      "id": "service-reformas",
-      "description": "Quick home renovation",
-      "imageUrl": "https://picsum.photos/seed/reformas/800/600",
-      "imageHint": "home renovation"
+      "id": "service-industrial",
+      "description": "Pintura industrial en nave",
+      "imageUrl": "https://picsum.photos/seed/industrial-paint/800/600",
+      "imageHint": "industrial painting"
     },
     {
-      "id": "service-mantenimiento",
-      "description": "Property maintenance service",
-      "imageUrl": "https://picsum.photos/seed/maintenance/800/600",
-      "imageHint": "building maintenance"
+      "id": "service-impermeabilizacion",
+      "description": "Impermeabilización de azotea",
+      "imageUrl": "https://picsum.photos/seed/waterproof/800/600",
+      "imageHint": "roof waterproofing"
     },
     {
       "id": "gallery1",
-      "description": "Finished painted living room",
+      "description": "Salón pintado con acabado profesional",
       "imageUrl": "https://picsum.photos/seed/gal1/600/800",
       "imageHint": "painted room"
     },
     {
       "id": "gallery2",
-      "description": "Detail of wall texture",
+      "description": "Detalle de textura en pared decorativa",
       "imageUrl": "https://picsum.photos/seed/gal2/600/400",
       "imageHint": "wall texture"
     },
     {
       "id": "gallery3",
-      "description": "Painter tools and brushes",
+      "description": "Equipo de pintura profesional",
       "imageUrl": "https://picsum.photos/seed/gal3/600/700",
       "imageHint": "painting tools"
     },
     {
       "id": "gallery4",
-      "description": "Building facade after painting",
+      "description": "Fachada rehabilitada",
       "imageUrl": "https://picsum.photos/seed/gal4/600/900",
       "imageHint": "building facade"
     },
     {
       "id": "gallery5",
-      "description": "Bright modern kitchen renovation",
+      "description": "Pintura decorativa moderna",
       "imageUrl": "https://picsum.photos/seed/gal5/600/500",
       "imageHint": "modern kitchen"
     },
     {
       "id": "gallery6",
-      "description": "Staircase wall painting",
+      "description": "Pintura de escalera",
       "imageUrl": "https://picsum.photos/seed/gal6/600/850",
       "imageHint": "staircase painting"
     },
     {
       "id": "gallery7",
-      "description": "Exterior terrace painting",
+      "description": "Pintura exterior de terraza",
       "imageUrl": "https://picsum.photos/seed/gal7/600/600",
       "imageHint": "terrace painting"
     },
     {
       "id": "gallery8",
-      "description": "Close up of painter working",
+      "description": "Pintor trabajando en detalle",
       "imageUrl": "https://picsum.photos/seed/gal8/600/450",
       "imageHint": "painter working"
     },
     {
       "id": "gallery9",
-      "description": "Office space renovation",
+      "description": "Reforma de local comercial",
       "imageUrl": "https://picsum.photos/seed/gal9/600/750",
       "imageHint": "office renovation"
     },
     {
       "id": "gallery10",
-      "description": "Detailed ceiling crown molding",
+      "description": "Acabado en techos",
       "imageUrl": "https://picsum.photos/seed/gal10/600/550",
       "imageHint": "ceiling detail"
     },
     {
       "id": "gallery11",
-      "description": "Commercial building maintenance",
+      "description": "Mantenimiento de edificio industrial",
       "imageUrl": "https://picsum.photos/seed/gal11/600/800",
       "imageHint": "commercial maintenance"
     },
     {
       "id": "gallery12",
-      "description": "Vibrant accent wall",
+      "description": "Pared de acento en color vibrante",
       "imageUrl": "https://picsum.photos/seed/gal12/600/650",
       "imageHint": "accent wall"
     }
