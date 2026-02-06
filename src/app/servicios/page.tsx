@@ -156,7 +156,7 @@ export default function ServicesPage() {
 
       <footer className="py-12 bg-white text-black border-t-4 border-black">
         <div className="container mx-auto px-4 text-center space-y-4">
-          <h3 className="text-3xl font-black uppercase tracking-tighter italic">HGN<span className="text-primary">.PINTURAS</span></h3>
+          <h3 className="text-3xl font-black uppercase tracking-tighter italic">HGN<span className="text-primary">PINTURAS</span></h3>
           <p className="font-bold opacity-80">© {new Date().getFullYear()} Hermanos Gómez Novo. Pintura de Confianza.</p>
         </div>
       </footer>

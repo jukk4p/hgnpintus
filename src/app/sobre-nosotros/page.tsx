@@ -96,7 +96,7 @@ export default function AboutPage() {
 
       <footer className="py-12 bg-primary text-white border-t-4 border-black">
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-3xl font-black uppercase tracking-tighter mb-4 italic">HGN.PINTURAS</h3>
+          <h3 className="text-3xl font-black uppercase tracking-tighter mb-4 italic">HGNPINTURAS</h3>
           <p className="font-bold opacity-80">Profesionales del color en el Aljarafe sevillano.</p>
         </div>
       </footer>

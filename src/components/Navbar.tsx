@@ -21,7 +21,7 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 bg-white border-b-4 border-black">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
         <Link href="/" className="text-xl md:text-2xl font-black uppercase tracking-tighter hover:text-primary transition-colors shrink-0">
-          HGN<span className="text-primary text-xl md:text-2xl">.PINTURAS</span>
+          HGN<span className="text-primary">PINTURAS</span>
         </Link>
         
         {/* Desktop Menu */}
