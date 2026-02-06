@@ -9,8 +9,8 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[90vh] w-full overflow-hidden flex items-center border-b-4 border-black">
-      <div className="absolute inset-0 z-0">
-        {heroImage?.imageUrl ? (
+      <div className="absolute inset-0 z-0 bg-secondary">
+        {heroImage?.imageUrl && (
           <Image
             src={heroImage.imageUrl}
             alt={heroImage.description}
@@ -19,8 +19,6 @@ export function Hero() {
             priority
             data-ai-hint="vertical painter"
           />
-        ) : (
-          <div className="absolute inset-0 bg-accent" />
         )}
         <div className="absolute inset-0 hero-overlay" />
       </div>
@@ -30,17 +28,17 @@ export function Hero() {
           <div className="space-y-8 animate-fade-in-up">
             <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9]">
               PINTURA <br />
-              <span className="text-primary bg-white px-2">PROFESIONAL</span><br />
+              <span className="text-white bg-primary px-2">PROFESIONAL</span><br />
               & VERTICAL
             </h1>
             <p className="text-xl md:text-2xl font-bold max-w-2xl text-gray-200">
               Líderes en Coria del Río y Sevilla. Rehabilitación de fachadas, pintura industrial y trabajos verticales sin andamios.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button asChild size="lg" className="h-16 px-8 text-xl font-black brutalist-border uppercase bg-primary hover:bg-primary/90 rounded-none">
+              <Button asChild size="lg" className="rounded-none">
                 <a href="#contacto">Solicitar Presupuesto</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="h-16 px-8 text-xl font-black brutalist-border uppercase bg-white text-black hover:bg-gray-100 rounded-none border-black">
+              <Button asChild size="lg" variant="outline" className="bg-white text-black rounded-none">
                 <a href="/servicios">Nuestros Servicios</a>
               </Button>
             </div>
@@ -48,7 +46,7 @@ export function Hero() {
 
           <div className="hidden lg:block brutalist-border overflow-hidden h-[400px] relative bg-white border-black">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12702.483!2d-5.95!3d37.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.328764038166!2d-6.0527!3d37.2882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd120e29206b83f3%3A0x6334543d8a17688c!2sAv.%20Blanca%20Paloma%2C%2060%2C%2041100%20Coria%20del%20R%C3%ADo%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
               width="100%"
               height="100%"
               style={{ border: 0 }}

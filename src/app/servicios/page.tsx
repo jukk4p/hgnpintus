@@ -43,7 +43,7 @@ const allServices = [
     imageId: "service-decorativa",
   },
   {
-    title: "IMPERMEABILIZACIONES",
+    title: "IMPERMEABILIZACIÓN",
     category: "Tejados y Terrazas",
     description: "Eliminamos goteras de raíz. Aplicación de cauchos, poliuretanos y pinturas anticongelantes con garantía total de estanqueidad y durabilidad certificada.",
     price: "~18€/m²",
@@ -96,7 +96,7 @@ export default function ServicesPage() {
               NUESTROS SERVICIOS <br />
               <span className="text-primary">PROFESIONALES</span>
             </h1>
-            <p className="text-xl font-bold text-accent">
+            <p className="text-xl font-bold text-secondary">
               Especialistas en Sevilla con más de 20 años de trayectoria. Todos nuestros trabajos cuentan con 2 años de garantía certificada por escrito.
             </p>
           </div>
@@ -126,16 +126,16 @@ export default function ServicesPage() {
                       <span className="text-[10px] font-black uppercase text-primary tracking-widest bg-primary/10 px-2 py-0.5">
                         {service.category}
                       </span>
-                      <h3 className="text-lg font-black uppercase mt-1 leading-tight tracking-tighter">
+                      <h3 className="text-sm md:text-base font-black uppercase mt-1 leading-tight tracking-tighter break-words">
                         {service.title}
                       </h3>
                     </div>
-                    <p className="text-sm font-medium text-accent leading-relaxed mb-6 line-clamp-4">
+                    <p className="text-xs font-medium text-secondary leading-relaxed mb-6 line-clamp-4">
                       {service.description}
                     </p>
                     <div className="mt-auto pt-4 border-t-2 border-dashed border-black/10 flex justify-between items-center">
-                      <span className="font-black text-xs">{service.price}</span>
-                      <Button asChild size="sm" className="bg-black text-white hover:bg-primary font-black uppercase text-[10px] h-8 px-4 brutalist-border rounded-none shadow-none">
+                      <span className="font-black text-[10px] uppercase text-secondary/60">{service.price}</span>
+                      <Button asChild size="sm" className="rounded-none h-8 px-4 text-[10px]">
                         <a href="/#contacto">Presupuesto</a>
                       </Button>
                     </div>
@@ -147,7 +147,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-accent text-white border-y-4 border-black">
+      <section className="py-24 bg-secondary text-white border-y-4 border-black">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 italic">"Trabajo impecable, rápidos y muy limpios en el portal de nuestra comunidad."</h2>
           <p className="font-bold opacity-70">— Administrador de Fincas, Coria del Río</p>

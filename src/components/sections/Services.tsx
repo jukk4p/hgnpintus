@@ -42,11 +42,11 @@ export function Services() {
             <h2 className="text-5xl font-black uppercase tracking-tighter mb-4 inline-block border-b-8 border-primary">
               Nuestras Actividades
             </h2>
-            <p className="text-xl font-bold text-accent mt-4">
+            <p className="text-xl font-bold text-secondary mt-4">
               Especialistas en todo tipo de trabajos relacionados con el sector de la Pintura Profesional en Sevilla.
             </p>
           </div>
-          <Button asChild variant="outline" className="brutalist-border font-black uppercase bg-white hover:bg-gray-50 border-black">
+          <Button asChild variant="outline" className="bg-white rounded-none">
             <Link href="/servicios">Ver Todos los Servicios</Link>
           </Button>
         </div>
@@ -78,7 +78,7 @@ export function Services() {
                   <h3 className="text-lg font-black uppercase mb-3 tracking-tighter leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-accent font-medium leading-relaxed text-sm line-clamp-3">
+                  <p className="text-secondary font-medium leading-relaxed text-sm line-clamp-3">
                     {service.description}
                   </p>
                 </div>

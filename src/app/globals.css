@@ -4,53 +4,53 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 210 29% 10%;
+    --background: 210 40% 98%; /* #F7FAFC */
+    --foreground: 218 17% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 210 29% 10%;
+    --card-foreground: 218 17% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 210 29% 10%;
-    --primary: 6 78% 57%; /* #E74C3C rojo */
+    --popover-foreground: 218 17% 15%;
+    --primary: 214 49% 34%; /* #2C5282 Blue Steel */
     --primary-foreground: 0 0% 100%;
-    --secondary: 210 20% 92%;
-    --secondary-foreground: 210 29% 24%;
-    --muted: 210 20% 92%;
-    --muted-foreground: 210 29% 40%;
-    --accent: 210 29% 24%; /* #2C3E50 steel blue */
-    --accent-foreground: 0 0% 100%;
+    --secondary: 218 17% 35%; /* #4A5568 Gray */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 218 17% 92%;
+    --muted-foreground: 218 17% 40%;
+    --accent: 210 40% 98%; /* #F7FAFC */
+    --accent-foreground: 214 49% 34%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 210 29% 10%;
-    --input: 210 29% 10%;
-    --ring: 6 78% 57%;
+    --border: 218 17% 15%;
+    --input: 218 17% 15%;
+    --ring: 214 49% 34%;
     --radius: 0rem;
-    --chart-1: 6 78% 57%;
-    --chart-2: 173 58% 39%;
+    --chart-1: 214 49% 34%;
+    --chart-2: 218 17% 35%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   }
 
   .dark {
-    --background: 210 29% 10%;
+    --background: 218 17% 15%;
     --foreground: 0 0% 98%;
-    --card: 210 29% 15%;
+    --card: 218 17% 20%;
     --card-foreground: 0 0% 98%;
-    --popover: 210 29% 10%;
+    --popover: 218 17% 15%;
     --popover-foreground: 0 0% 98%;
-    --primary: 6 78% 57%;
+    --primary: 214 49% 45%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 210 29% 20%;
+    --secondary: 218 17% 30%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 210 29% 20%;
-    --muted-foreground: 210 29% 70%;
-    --accent: 210 29% 30%;
+    --muted: 218 17% 25%;
+    --muted-foreground: 218 17% 70%;
+    --accent: 218 17% 25%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 98%;
     --input: 0 0% 98%;
-    --ring: 6 78% 57%;
+    --ring: 214 49% 45%;
   }
 }
 
@@ -65,13 +65,13 @@
 
 .brutalist-border {
   border: 3px solid hsl(var(--border));
-  box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.1);
+  box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .brutalist-border:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.15);
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
 }
 
 .brutalist-card {
@@ -79,7 +79,7 @@
 }
 
 .hero-overlay {
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.85));
+  background: linear-gradient(to bottom, rgba(44, 82, 130, 0.4), rgba(15, 23, 42, 0.9));
 }
 
 @keyframes fade-in-up {
@@ -95,4 +95,13 @@
 
 .animate-fade-in-up {
   animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.button-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+  color: white;
+}
+
+.button-gradient:hover {
+  filter: brightness(1.1);
 }
