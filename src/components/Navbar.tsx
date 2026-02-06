@@ -13,7 +13,8 @@ export function Navbar() {
       <div className="hidden md:flex items-center gap-8">
         <Link href="/" className="font-black uppercase text-sm hover:text-primary transition-colors">Inicio</Link>
         <Link href="/servicios" className="font-black uppercase text-sm hover:text-primary transition-colors">Servicios</Link>
-        <Link href="/#galeria" className="font-black uppercase text-sm hover:text-primary transition-colors">Galería</Link>
+        <Link href="/proyectos" className="font-black uppercase text-sm hover:text-primary transition-colors">Proyectos</Link>
+        <Link href="/sobre-nosotros" className="font-black uppercase text-sm hover:text-primary transition-colors">Nosotros</Link>
         <Link href="/#contacto" className="font-black uppercase text-sm hover:text-primary transition-colors">Contacto</Link>
       </div>
 
