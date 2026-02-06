@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -12,14 +11,17 @@ export function Navbar() {
       </Link>
       
       <div className="hidden md:flex items-center gap-8">
-        <Link href="#servicios" className="font-black uppercase text-sm hover:text-primary transition-colors">Servicios</Link>
-        <Link href="#galeria" className="font-black uppercase text-sm hover:text-primary transition-colors">Galería</Link>
-        <Link href="#contacto" className="font-black uppercase text-sm hover:text-primary transition-colors">Contacto</Link>
+        <Link href="/" className="font-black uppercase text-sm hover:text-primary transition-colors">Inicio</Link>
+        <Link href="/servicios" className="font-black uppercase text-sm hover:text-primary transition-colors">Servicios</Link>
+        <Link href="/#galeria" className="font-black uppercase text-sm hover:text-primary transition-colors">Galería</Link>
+        <Link href="/#contacto" className="font-black uppercase text-sm hover:text-primary transition-colors">Contacto</Link>
       </div>
 
-      <Button className="font-black uppercase bg-primary hover:bg-primary/90 brutalist-border h-10 px-6">
-        Llamar Ahora
-      </Button>
+      <div className="flex items-center gap-4">
+        <Button asChild className="hidden sm:inline-flex font-black uppercase bg-primary hover:bg-primary/90 brutalist-border h-10 px-6">
+          <a href="tel:+34692303131">692 303 131</a>
+        </Button>
+      </div>
     </nav>
   );
 }

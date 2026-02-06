@@ -1,106 +1,130 @@
 {
   "placeholderImages": [
     {
-      "id": "hero",
-      "description": "Profesionales pintando un edificio moderno",
-      "imageUrl": "https://picsum.photos/seed/painter-hero/1920/1080",
-      "imageHint": "painter building"
+      "id": "hero-vertical",
+      "description": "Pintor realizando trabajos verticales en fachada",
+      "imageUrl": "https://picsum.photos/seed/vertical-painter/1920/1080",
+      "imageHint": "vertical painter"
     },
     {
-      "id": "service-pintura",
-      "description": "Trabajo de pintura en interiores",
-      "imageUrl": "https://picsum.photos/seed/pintura-interior/800/600",
+      "id": "service-general",
+      "description": "Pintura de interiores moderna",
+      "imageUrl": "https://picsum.photos/seed/int-paint/800/600",
       "imageHint": "interior painting"
     },
     {
-      "id": "service-vertical",
-      "description": "Rehabilitación de fachada en edificio",
-      "imageUrl": "https://picsum.photos/seed/vertical-works/800/600",
-      "imageHint": "facade renovation"
+      "id": "service-industrial",
+      "description": "Nave industrial recién pintada",
+      "imageUrl": "https://picsum.photos/seed/ind-paint/800/600",
+      "imageHint": "industrial warehouse"
     },
     {
-      "id": "service-industrial",
-      "description": "Pintura industrial en nave",
-      "imageUrl": "https://picsum.photos/seed/industrial-paint/800/600",
-      "imageHint": "industrial painting"
+      "id": "service-decorativa",
+      "description": "Pared decorativa con textura",
+      "imageUrl": "https://picsum.photos/seed/deco-paint/800/600",
+      "imageHint": "decorative wall"
     },
     {
       "id": "service-impermeabilizacion",
-      "description": "Impermeabilización de azotea",
-      "imageUrl": "https://picsum.photos/seed/waterproof/800/600",
+      "description": "Azotea impermeabilizada",
+      "imageUrl": "https://picsum.photos/seed/waterproof-roof/800/600",
       "imageHint": "roof waterproofing"
     },
     {
+      "id": "service-fachada",
+      "description": "Rehabilitación de fachada edificio",
+      "imageUrl": "https://picsum.photos/seed/facade-reno/800/600",
+      "imageHint": "facade renovation"
+    },
+    {
+      "id": "service-vertical",
+      "description": "Trabajo vertical sin andamios",
+      "imageUrl": "https://picsum.photos/seed/rope-access/800/600",
+      "imageHint": "rope access"
+    },
+    {
+      "id": "service-reformas",
+      "description": "Alisado de paredes",
+      "imageUrl": "https://picsum.photos/seed/wall-plastering/800/600",
+      "imageHint": "wall repair"
+    },
+    {
+      "id": "service-comunidades",
+      "description": "Mantenimiento de portal",
+      "imageUrl": "https://picsum.photos/seed/community-maintenance/800/600",
+      "imageHint": "building maintenance"
+    },
+    {
       "id": "gallery1",
-      "description": "Salón pintado con acabado profesional",
-      "imageUrl": "https://picsum.photos/seed/gal1/600/800",
-      "imageHint": "painted room"
+      "description": "Pintura fachada Sevilla",
+      "imageUrl": "https://picsum.photos/seed/sev-fac1/600/800",
+      "imageHint": "facade painting"
     },
     {
       "id": "gallery2",
-      "description": "Detalle de textura en pared decorativa",
-      "imageUrl": "https://picsum.photos/seed/gal2/600/400",
-      "imageHint": "wall texture"
+      "description": "Trabajo vertical edificio",
+      "imageUrl": "https://picsum.photos/seed/vert-ed1/600/400",
+      "imageHint": "building work"
     },
     {
       "id": "gallery3",
-      "description": "Equipo de pintura profesional",
-      "imageUrl": "https://picsum.photos/seed/gal3/600/700",
-      "imageHint": "painting tools"
+      "description": "Impermeabilizacion tejado",
+      "imageUrl": "https://picsum.photos/seed/roof-imp/600/700",
+      "imageHint": "roof work"
     },
     {
       "id": "gallery4",
-      "description": "Fachada rehabilitada",
-      "imageUrl": "https://picsum.photos/seed/gal4/600/900",
-      "imageHint": "building facade"
+      "description": "Pintura salón moderno",
+      "imageUrl": "https://picsum.photos/seed/living-room/600/900",
+      "imageHint": "painted living"
     },
     {
       "id": "gallery5",
-      "description": "Pintura decorativa moderna",
-      "imageUrl": "https://picsum.photos/seed/gal5/600/500",
-      "imageHint": "modern kitchen"
+      "description": "Nave industrial epoxi",
+      "imageUrl": "https://picsum.photos/seed/ind-floor/600/500",
+      "imageHint": "epoxy floor"
     },
     {
       "id": "gallery6",
-      "description": "Pintura de escalera",
-      "imageUrl": "https://picsum.photos/seed/gal6/600/850",
-      "imageHint": "staircase painting"
+      "description": "Alisado de gotelé",
+      "imageUrl": "https://picsum.photos/seed/smooth-wall/600/850",
+      "imageHint": "smooth wall"
     },
     {
       "id": "gallery7",
-      "description": "Pintura exterior de terraza",
-      "imageUrl": "https://picsum.photos/seed/gal7/600/600",
-      "imageHint": "terrace painting"
+      "description": "Pintura exterior chalet",
+      "imageUrl": "https://picsum.photos/seed/house-ext/600/600",
+      "imageHint": "house exterior"
     },
     {
       "id": "gallery8",
-      "description": "Pintor trabajando en detalle",
-      "imageUrl": "https://picsum.photos/seed/gal8/600/450",
-      "imageHint": "painter working"
+      "description": "Mantenimiento garaje",
+      "imageUrl": "https://picsum.photos/seed/garage-paint/600/450",
+      "imageHint": "garage painting"
     },
     {
       "id": "gallery9",
-      "description": "Reforma de local comercial",
-      "imageUrl": "https://picsum.photos/seed/gal9/600/750",
-      "imageHint": "office renovation"
+      "description": "Pintura decorativa estuco",
+      "imageUrl": "https://picsum.photos/seed/stucco/600/750",
+      "imageHint": "stucco wall"
     },
     {
       "id": "gallery10",
-      "description": "Acabado en techos",
-      "imageUrl": "https://picsum.photos/seed/gal10/600/550",
-      "imageHint": "ceiling detail"
+      "description": "Fachada comercial",
+      "imageUrl": "https://picsum.photos/seed/shop-front/600/550",
+      "imageHint": "shop front"
     },
     {
       "id": "gallery11",
-      "description": "Mantenimiento de edificio industrial",
-      "imageUrl": "https://picsum.photos/seed/gal11/600/800",
-      "imageHint": "commercial maintenance"
+      "description": "Pintura de barandillas",
+      "imageUrl": "https://picsum.photos/seed/railings/600/800",
+      "imageHint": "metal painting"
     },
     {
       "id": "gallery12",
-      "description": "Pared de acento en color vibrante",
-      "imageUrl": "https://picsum.photos/seed/gal12/600/650",
-      "imageHint": "accent wall"
+      "description": "Impermeabilización terraza",
+      "imageUrl": "https://picsum.photos/seed/terrace-imp/600/650",
+      "imageHint": "terrace work"
     }
   ]
 }
