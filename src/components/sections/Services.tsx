@@ -35,18 +35,18 @@ const homeServices = [
 
 export function Services() {
   return (
-    <section id="servicios" className="py-24 bg-background">
+    <section id="servicios" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-5xl font-black uppercase tracking-tighter mb-4 inline-block border-b-8 border-primary">
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-4 inline-block border-b-4 md:border-b-8 border-primary leading-tight">
               Nuestras Actividades
             </h2>
-            <p className="text-xl font-bold text-secondary mt-4">
-              Especialistas en todo tipo de trabajos relacionados con el sector de la Pintura Profesional en Sevilla.
+            <p className="text-lg md:text-xl font-bold text-secondary mt-4">
+              Especialistas en todo tipo de trabajos de Pintura Profesional en Sevilla.
             </p>
           </div>
-          <Button asChild variant="outline" className="bg-white rounded-none">
+          <Button asChild variant="outline" className="w-full md:w-auto bg-white rounded-none h-12">
             <Link href="/servicios">Ver Todos los Servicios</Link>
           </Button>
         </div>
@@ -75,7 +75,7 @@ export function Services() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-black uppercase mb-3 tracking-tighter leading-tight">
+                  <h3 className="text-lg font-black uppercase mb-3 tracking-tighter leading-tight break-words">
                     {service.title}
                   </h3>
                   <p className="text-secondary font-medium leading-relaxed text-sm line-clamp-3">

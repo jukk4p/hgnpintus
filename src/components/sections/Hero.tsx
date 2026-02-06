@@ -8,8 +8,8 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-vertical");
 
   return (
-    <section className="relative min-h-[90vh] w-full overflow-hidden flex items-center border-b-4 border-black">
-      <div className="absolute inset-0 z-0 bg-secondary">
+    <section className="relative min-h-[60vh] md:min-h-[90vh] w-full overflow-hidden flex items-center border-b-4 border-black bg-secondary">
+      <div className="absolute inset-0 z-0">
         {heroImage?.imageUrl ? (
           <Image
             src={heroImage.imageUrl}
@@ -23,23 +23,23 @@ export function Hero() {
         <div className="absolute inset-0 hero-overlay" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 text-white py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-fade-in-up">
-            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9]">
+      <div className="container mx-auto px-4 relative z-10 text-white py-12 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="space-y-6 md:space-y-8 animate-fade-in-up">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.95]">
               PINTURA <br />
-              <span className="text-white bg-primary px-2">PROFESIONAL</span><br />
+              <span className="text-white bg-primary px-2">PROFESIONAL</span><br className="hidden sm:block" />
               & VERTICAL
             </h1>
-            <p className="text-xl md:text-2xl font-bold max-w-2xl text-gray-200">
-              Líderes en Coria del Río y Sevilla. Rehabilitación de fachadas, pintura industrial y trabajos verticales sin andamios.
+            <p className="text-lg md:text-2xl font-bold max-w-2xl text-gray-200">
+              Líderes en Coria del Río y Sevilla. Especialistas en fachadas y trabajos en altura sin andamios.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
-              <Button asChild size="lg" className="rounded-none">
+            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+              <Button asChild size="lg" className="w-full sm:w-auto rounded-none h-14">
                 <a href="#contacto">Solicitar Presupuesto</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="bg-white text-black rounded-none">
-                <a href="/servicios">Nuestros Servicios</a>
+              <Button asChild size="lg" variant="outline" className="w-full sm:w-auto bg-white text-black rounded-none h-14">
+                <a href="/servicios">Ver Servicios</a>
               </Button>
             </div>
           </div>

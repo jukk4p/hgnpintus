@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type {Metadata, Viewport} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -9,6 +9,12 @@ export const metadata: Metadata = {
     description: 'Expertos en pintura profesional, industrial y vertical en Sevilla.',
     images: ['https://picsum.photos/seed/painter-hero/1200/630'],
   }
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -58,7 +64,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-body antialiased bg-background selection:bg-primary selection:text-white">
+      <body className="font-body antialiased bg-background selection:bg-primary selection:text-white text-[16px]">
         {children}
       </body>
     </html>
