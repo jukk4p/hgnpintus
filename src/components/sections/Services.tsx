@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Brush, Building2, Hammer, ClipboardCheck } from "lucide-react";
@@ -55,13 +54,15 @@ export function Services() {
                 key={index} 
                 className="brutalist-card group hover:-translate-y-2 transition-transform duration-300"
               >
-                <div className="relative h-48 mb-6 border-2 border-black overflow-hidden">
-                  <Image
-                    src={serviceImg?.imageUrl || ""}
-                    alt={service.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                <div className="relative h-48 mb-6 border-2 border-black overflow-hidden bg-muted">
+                  {serviceImg?.imageUrl && (
+                    <Image
+                      src={serviceImg.imageUrl}
+                      alt={service.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  )}
                   <div className="absolute top-4 right-4 bg-primary text-white p-3 border-2 border-black">
                     <Icon size={24} />
                   </div>
