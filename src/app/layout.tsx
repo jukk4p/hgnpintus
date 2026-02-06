@@ -23,7 +23,7 @@ export default function RootLayout({
     "image": "https://picsum.photos/seed/painter-hero/800/600",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Avenida Blanca Paloma, 60",
+      "streetAddress": "Avenida Blanca Paloma, 64",
       "addressLocality": "Coria del Río",
       "addressRegion": "Sevilla",
       "postalCode": "41100",

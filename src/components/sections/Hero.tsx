@@ -10,16 +10,16 @@ export function Hero() {
   return (
     <section className="relative min-h-[90vh] w-full overflow-hidden flex items-center border-b-4 border-black">
       <div className="absolute inset-0 z-0 bg-secondary">
-        {heroImage?.imageUrl && (
+        {heroImage?.imageUrl ? (
           <Image
             src={heroImage.imageUrl}
-            alt={heroImage.description}
+            alt={heroImage.description || "Hermanos Gómez Novo Pinturas"}
             fill
             className="object-cover"
             priority
             data-ai-hint="vertical painter"
           />
-        )}
+        ) : null}
         <div className="absolute inset-0 hero-overlay" />
       </div>
 
@@ -46,7 +46,7 @@ export function Hero() {
 
           <div className="hidden lg:block brutalist-border overflow-hidden h-[400px] relative bg-white border-black">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.328764038166!2d-6.0527!3d37.2882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd120e29206b83f3%3A0x6334543d8a17688c!2sAv.%20Blanca%20Paloma%2C%2060%2C%2041100%20Coria%20del%20R%C3%ADo%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.328764038166!2d-6.0527!3d37.2882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd120e29206b83f3%3A0x6334543d8a17688c!2sAv.%20Blanca%20Paloma%2C%2064%2C%2041100%20Coria%20del%20R%C3%ADo%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
               width="100%"
               height="100%"
               style={{ border: 0 }}

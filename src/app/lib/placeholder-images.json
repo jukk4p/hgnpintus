@@ -125,6 +125,30 @@
       "description": "Impermeabilización terraza",
       "imageUrl": "https://picsum.photos/seed/terrace-imp/600/650",
       "imageHint": "terrace work"
+    },
+    {
+      "id": "gallery13",
+      "description": "Pintura vertical torre",
+      "imageUrl": "https://picsum.photos/seed/tower-paint/600/800",
+      "imageHint": "tower painting"
+    },
+    {
+      "id": "gallery14",
+      "description": "Rehabilitación cornisa",
+      "imageUrl": "https://picsum.photos/seed/ledge-repair/600/400",
+      "imageHint": "ledge repair"
+    },
+    {
+      "id": "gallery15",
+      "description": "Acabado industrial suelo",
+      "imageUrl": "https://picsum.photos/seed/ind-floor-2/600/700",
+      "imageHint": "floor painting"
+    },
+    {
+      "id": "gallery16",
+      "description": "Pintura comunidad Sevilla",
+      "imageUrl": "https://picsum.photos/seed/comm-paint/600/900",
+      "imageHint": "community painting"
     }
   ]
 }

@@ -3,7 +3,7 @@
 import { MessageCircle } from "lucide-react";
 
 export function WhatsAppWidget() {
-  const phoneNumber = "34655123456"; 
+  const phoneNumber = "34692303131"; 
   const message = encodeURIComponent("¡Hola! He visto vuestra web y me gustaría solicitar un presupuesto gratis para un trabajo de pintura.");
 
   return (
