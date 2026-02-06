@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Brush, Building2, Hammer, ClipboardCheck } from "lucide-react";
@@ -68,7 +67,7 @@ export function Services() {
                     <Icon size={24} />
                   </div>
                 </div>
-                <h3 className="text-xl lg:text-2xl font-black uppercase mb-3 tracking-tighter break-words hyphens-auto">
+                <h3 className="text-lg lg:text-xl font-black uppercase mb-3 tracking-tighter whitespace-normal">
                   {service.title}
                 </h3>
                 <p className="text-accent font-medium leading-relaxed">

@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -11,7 +10,7 @@ export function Hero() {
   return (
     <section className="relative h-[90vh] w-full overflow-hidden flex items-center border-b-4 border-black">
       <div className="absolute inset-0 z-0">
-        {heroImage?.imageUrl && (
+        {heroImage?.imageUrl ? (
           <Image
             src={heroImage.imageUrl}
             alt={heroImage.description || "Hero"}
@@ -20,7 +19,7 @@ export function Hero() {
             priority
             data-ai-hint="painter painting"
           />
-        )}
+        ) : null}
         <div className="absolute inset-0 hero-overlay" />
       </div>
 
