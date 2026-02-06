@@ -67,8 +67,7 @@ export function Services() {
                     <Icon size={24} />
                   </div>
                 </div>
-                {/* Ajustado el tamaño de fuente y tracking para evitar desbordamientos en palabras largas */}
-                <h3 className="text-[15px] sm:text-base lg:text-lg font-black uppercase mb-3 tracking-[ -0.05em] leading-tight break-keep overflow-hidden">
+                <h3 className="text-sm sm:text-base font-black uppercase mb-3 tracking-tighter leading-tight">
                   {service.title}
                 </h3>
                 <p className="text-accent font-medium leading-relaxed text-sm">
