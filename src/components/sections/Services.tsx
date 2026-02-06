@@ -1,7 +1,7 @@
 
 "use client";
 
-import { Brush, Building2, Factory, Droplets } from "lucide-react";
+import { Brush, Building2, Mountain, Droplets } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -14,14 +14,14 @@ const services = [
   },
   {
     title: "Fachadas y Edificios",
-    description: "Rehabilitación completa de fachadas y trabajos verticales con personal altamente cualificado.",
+    description: "Rehabilitación completa de fachadas y limpieza de superficies exteriores con máxima eficiencia.",
     icon: Building2,
     imageId: "service-vertical",
   },
   {
-    title: "Pintura Industrial",
-    description: "Soluciones especializadas para naves, locales y maquinaria con pinturas de alta resistencia.",
-    icon: Factory,
+    title: "Trabajos Verticales",
+    description: "Especialistas en accesos difíciles y pintura en altura con las máximas medidas de seguridad.",
+    icon: Mountain,
     imageId: "service-industrial",
   },
   {
