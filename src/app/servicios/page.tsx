@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Navbar } from "@/components/Navbar";
@@ -90,14 +91,14 @@ export default function ServicesPage() {
     <main className="min-h-screen">
       <Navbar />
       
-      <section className="py-24 bg-background">
+      <section className="py-12 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mb-16">
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6 leading-[0.9]">
+          <div className="max-w-3xl mb-12 md:mb-16">
+            <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-6 leading-[0.9]">
               NUESTROS SERVICIOS <br />
               <span className="text-primary">PROFESIONALES</span>
             </h1>
-            <p className="text-xl font-bold text-secondary">
+            <p className="text-lg md:text-xl font-bold text-secondary">
               Especialistas en Sevilla con más de 20 años de trayectoria. Garantía de 2 años en todos nuestros trabajos certificada por escrito.
             </p>
           </div>
@@ -112,10 +113,10 @@ export default function ServicesPage() {
                     {img && (
                       <Image
                         src={img.imageUrl}
-                        alt={`Pintor profesional ${service.title.toLowerCase()} Sevilla`}
+                        alt={img.description}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                         className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                        data-ai-hint={img.imageHint}
                       />
                     )}
                     <div className="absolute top-2 left-2 bg-primary text-white p-2 border-2 border-black z-10 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
@@ -128,7 +129,7 @@ export default function ServicesPage() {
                       <span className="text-[10px] font-black uppercase text-primary tracking-widest bg-primary/10 px-2 py-0.5">
                         {service.category}
                       </span>
-                      <h3 className="text-sm md:text-base font-black uppercase mt-1 leading-tight tracking-tighter">
+                      <h3 className="text-base md:text-lg font-black uppercase mt-1 leading-tight tracking-tighter">
                         {service.title}
                       </h3>
                     </div>
@@ -151,7 +152,7 @@ export default function ServicesPage() {
 
       <section className="py-24 bg-secondary text-white border-y-4 border-black">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 italic">"Trabajo impecable, rápidos y muy limpios en el mantenimiento de nuestro bloque."</h2>
+          <h2 className="text-2xl md:text-4xl font-black uppercase mb-8 italic">"Trabajo impecable, rápidos y muy limpios en el mantenimiento de nuestro bloque."</h2>
           <p className="font-bold opacity-70">— Administrador de Fincas, Coria del Río</p>
         </div>
       </section>

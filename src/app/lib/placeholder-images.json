@@ -3,153 +3,105 @@
   "placeholderImages": [
     {
       "id": "hero-vertical",
-      "description": "Especialista en trabajos verticales realizando pintura de fachada en Sevilla",
+      "description": "Técnico especialista en trabajos verticales realizando pintura de fachada en Sevilla Hnos Gómez Novo",
       "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
       "imageHint": "pintor vertical"
     },
     {
       "id": "service-general",
-      "description": "Pintor profesional de interiores realizando acabados de alta calidad en vivienda",
+      "description": "Pintura general interior y exterior Hnos Gómez Novo Coria del Río",
       "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
       "imageHint": "pintura interior"
     },
     {
       "id": "service-industrial",
-      "description": "Aplicación de pintura industrial de alta resistencia en nave de Sevilla",
+      "description": "Pintura industrial de naves y suelos epoxi Hnos Gómez Novo Sevilla",
       "imageUrl": "/images/services/02-pintura-industrial-nave-fabrica.jpg",
       "imageHint": "pintura industrial"
     },
     {
       "id": "service-decorativa",
-      "description": "Acabados de alta decoración y efectos especiales en paredes",
+      "description": "Pintura decorativa y alta decoración profesional Hnos Gómez Novo Coria del Río",
       "imageUrl": "/images/services/03-pintura-decorativa-efectos-pared.jpg",
       "imageHint": "pintura decorativa"
     },
     {
       "id": "service-impermeabilizacion",
-      "description": "Impermeabilización técnica de terrazas y cubiertas con garantía",
+      "description": "Impermeabilización de tejados y terrazas con garantía Hnos Gómez Novo Sevilla",
       "imageUrl": "/images/services/04-impermeabilizacion-tejado-terraza.jpg",
       "imageHint": "impermeabilizacion sevilla"
     },
     {
       "id": "service-fachada",
-      "description": "Rehabilitación integral de fachadas en edificios de viviendas",
+      "description": "Rehabilitación de fachadas y pintura exterior de edificios Hnos Gómez Novo Coria del Río",
       "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
       "imageHint": "rehabilitacion fachadas"
     },
     {
       "id": "service-vertical",
-      "description": "Trabajos en altura mediante técnicas de acceso por cuerda con seguridad",
+      "description": "Trabajos verticales y pintura en altura sin andamios Hnos Gómez Novo Sevilla",
       "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
       "imageHint": "trabajos verticales"
     },
     {
       "id": "service-reformas",
-      "description": "Reparaciones rápidas de paredes, alisados y eliminación de humedades",
+      "description": "Reformas rápidas y alisado de paredes profesional Hnos Gómez Novo Coria del Río",
       "imageUrl": "/images/services/07-reformas-rapidas-reparaciones.jpg",
       "imageHint": "reformas pintura"
     },
     {
       "id": "service-comunidades",
-      "description": "Mantenimiento de pintura profesional en zonas comunes y comunidades",
+      "description": "Mantenimiento de pintura en comunidades de vecinos Hnos Gómez Novo Sevilla",
       "imageUrl": "/images/services/08-mantenimiento-comunidades-pasillo.jpg",
       "imageHint": "mantenimiento comunidades"
     },
     {
       "id": "gallery1",
-      "description": "Rehabilitación de fachada en bloque de viviendas",
+      "description": "Rehabilitación integral de fachada en Sevilla Hnos Gómez Novo",
       "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
       "imageHint": "fachada sevilla"
     },
     {
       "id": "gallery2",
-      "description": "Pintura técnica en trabajos verticales",
+      "description": "Pintura técnica en trabajos verticales Coria del Río Hnos Gómez Novo",
       "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
       "imageHint": "pintura vertical"
     },
     {
       "id": "gallery3",
-      "description": "Impermeabilización de azotea con poliuretano",
+      "description": "Impermeabilización técnica de azotea en Sevilla Hnos Gómez Novo",
       "imageUrl": "/images/services/04-impermeabilizacion-tejado-terraza.jpg",
       "imageHint": "impermeabilizacion"
     },
     {
       "id": "gallery4",
-      "description": "Acabado de alta decoración en interiores",
+      "description": "Acabado de alta decoración en interiores Hnos Gómez Novo Coria del Río",
       "imageUrl": "/images/services/03-pintura-decorativa-efectos-pared.jpg",
       "imageHint": "pintura interior"
     },
     {
       "id": "gallery5",
-      "description": "Pintura de suelos en nave industrial",
+      "description": "Pintura de suelos industriales epoxi Sevilla Hnos Gómez Novo",
       "imageUrl": "/images/services/02-pintura-industrial-nave-fabrica.jpg",
       "imageHint": "pintura nave"
     },
     {
       "id": "gallery6",
-      "description": "Mantenimiento de portales y comunidades",
+      "description": "Mantenimiento profesional de comunidades Sevilla Hnos Gómez Novo",
       "imageUrl": "/images/services/08-mantenimiento-comunidades-pasillo.jpg",
       "imageHint": "comunidades sevilla"
     },
     {
       "id": "gallery7",
-      "description": "Alisado de paredes y pintura plástica",
+      "description": "Alisado de paredes y pintura de calidad Hnos Gómez Novo Coria del Río",
       "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
       "imageHint": "alisado paredes"
     },
     {
       "id": "gallery8",
-      "description": "Reparación de grietas en paramento exterior",
+      "description": "Reparación de paramentos exteriores Hnos Gómez Novo Sevilla",
       "imageUrl": "/images/services/07-reformas-rapidas-reparaciones.jpg",
       "imageHint": "reformas pintura"
-    },
-    {
-      "id": "gallery9",
-      "description": "Pintura de fachada mediante acceso por cuerda",
-      "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
-      "imageHint": "vertical sevilla"
-    },
-    {
-      "id": "gallery10",
-      "description": "Tratamiento impermeabilizante en tejado",
-      "imageUrl": "/images/services/04-impermeabilizacion-tejado-terraza.jpg",
-      "imageHint": "goteras sevilla"
-    },
-    {
-      "id": "gallery11",
-      "description": "Protección industrial de estructuras metálicas",
-      "imageUrl": "/images/services/02-pintura-industrial-nave-fabrica.jpg",
-      "imageHint": "pintura metal"
-    },
-    {
-      "id": "gallery12",
-      "description": "Renovación estética de zonas comunes",
-      "imageUrl": "/images/services/08-mantenimiento-comunidades-pasillo.jpg",
-      "imageHint": "pasillo comunidad"
-    },
-    {
-      "id": "gallery13",
-      "description": "Acabado de pintura en fachadas históricas",
-      "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
-      "imageHint": "pintura exterior"
-    },
-    {
-      "id": "gallery14",
-      "description": "Eliminación de humedades en interiores",
-      "imageUrl": "/images/services/07-reformas-rapidas-reparaciones.jpg",
-      "imageHint": "humedad pared"
-    },
-    {
-      "id": "gallery15",
-      "description": "Pintura general en vivienda unifamiliar",
-      "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
-      "imageHint": "pintor casa"
-    },
-    {
-      "id": "gallery16",
-      "description": "Estuco veneciano y alta decoración",
-      "imageUrl": "/images/services/03-pintura-decorativa-efectos-pared.jpg",
-      "imageHint": "estuco sevilla"
     }
   ]
 }
