@@ -56,7 +56,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-black uppercase text-accent/60">Email</h4>
-                  <p className="text-lg md:text-xl font-bold text-accent">info@hnosgomeznovo.es</p>
+                  <p className="text-lg md:text-xl font-bold text-accent">info@hnosgomeznovopinturas.es</p>
                 </div>
               </div>
             </div>
