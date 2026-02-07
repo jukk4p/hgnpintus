@@ -24,33 +24,6 @@
     --input: 218 17% 15%;
     --ring: 214 49% 34%;
     --radius: 0rem;
-    --chart-1: 214 49% 34%;
-    --chart-2: 218 17% 35%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-  }
-
-  .dark {
-    --background: 218 17% 15%;
-    --foreground: 0 0% 98%;
-    --card: 218 17% 20%;
-    --card-foreground: 0 0% 98%;
-    --popover: 218 17% 15%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 214 49% 45%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 218 17% 30%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 218 17% 25%;
-    --muted-foreground: 218 17% 70%;
-    --accent: 218 17% 25%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 98%;
-    --input: 0 0% 98%;
-    --ring: 214 49% 45%;
   }
 }
 
@@ -59,7 +32,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-body text-[16px] antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline uppercase;
   }
 }
 
@@ -75,11 +51,11 @@
 }
 
 .brutalist-card {
-  @apply brutalist-border bg-card p-6;
+  @apply brutalist-border bg-card p-4 md:p-6;
 }
 
 .hero-overlay {
-  background: linear-gradient(to bottom, rgba(44, 82, 130, 0.4), rgba(15, 23, 42, 0.9));
+  background: linear-gradient(to bottom, rgba(44, 82, 130, 0.5), rgba(15, 23, 42, 0.85));
 }
 
 @keyframes fade-in-up {
@@ -97,11 +73,31 @@
   animation: fade-in-up 0.8s ease-out forwards;
 }
 
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s infinite ease-in-out;
+}
+
 .button-gradient {
+  @apply bg-primary text-white;
   background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-  color: white;
 }
 
 .button-gradient:hover {
   filter: brightness(1.1);
+}
+
+/* Custom scrollbar for better mobile UX */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 hover:bg-primary/40 rounded-full;
 }
