@@ -66,7 +66,7 @@ export function Services() {
                   {serviceImg?.imageUrl && (
                     <Image
                       src={serviceImg.imageUrl}
-                      alt={`Pintor profesional ${service.title.toLowerCase()} Sevilla`}
+                      alt={serviceImg.description}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500 grayscale group-hover:grayscale-0"
                       data-ai-hint={serviceImg.imageHint}
