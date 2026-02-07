@@ -3,93 +3,93 @@
   "placeholderImages": [
     {
       "id": "hero-vertical",
-      "description": "Pintor profesional realizando trabajos verticales en fachada de edificio",
-      "imageUrl": "https://picsum.photos/seed/vertpainter/1920/1080",
-      "imageHint": "rope access"
+      "description": "Especialista en trabajos verticales realizando pintura de fachada en Sevilla",
+      "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
+      "imageHint": "pintor vertical"
     },
     {
       "id": "service-general",
-      "description": "Pintor profesional de interiores aplicando rodillo en pared de salón",
-      "imageUrl": "https://picsum.photos/seed/painterint/800/800",
-      "imageHint": "painter interior"
+      "description": "Pintor profesional de interiores realizando acabados de alta calidad en vivienda",
+      "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
+      "imageHint": "pintura interior"
     },
     {
       "id": "service-industrial",
-      "description": "Trabajador profesional aplicando pintura industrial con spray en nave",
-      "imageUrl": "https://picsum.photos/seed/paintind/800/800",
-      "imageHint": "industrial painting"
+      "description": "Aplicación de pintura industrial de alta resistencia en nave de Sevilla",
+      "imageUrl": "/images/services/02-pintura-industrial-nave-fabrica.jpg",
+      "imageHint": "pintura industrial"
     },
     {
       "id": "service-decorativa",
-      "description": "Pintor experto realizando acabados de alta decoración con brocha",
-      "imageUrl": "https://picsum.photos/seed/paintdeco/800/800",
-      "imageHint": "decorative painting"
+      "description": "Acabados de alta decoración y efectos especiales en paredes",
+      "imageUrl": "/images/services/03-pintura-decorativa-efectos-pared.jpg",
+      "imageHint": "pintura decorativa"
     },
     {
       "id": "service-impermeabilizacion",
-      "description": "Obrero instalando membrana líquida impermeabilizante en terraza",
-      "imageUrl": "https://picsum.photos/seed/waterproof/800/800",
-      "imageHint": "waterproofing roof"
+      "description": "Impermeabilización técnica de terrazas y cubiertas con garantía",
+      "imageUrl": "/images/services/04-impermeabilizacion-tejado-terraza.jpg",
+      "imageHint": "impermeabilizacion sevilla"
     },
     {
       "id": "service-fachada",
-      "description": "Rehabilitación profesional de fachada en edificio de viviendas",
-      "imageUrl": "https://picsum.photos/seed/facade/800/800",
-      "imageHint": "facade painting"
+      "description": "Rehabilitación integral de fachadas en edificios de viviendas",
+      "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
+      "imageHint": "rehabilitacion fachadas"
     },
     {
       "id": "service-vertical",
-      "description": "Técnico especialista en trabajos verticales con cuerdas y arnés",
-      "imageUrl": "https://picsum.photos/seed/vertical/800/800",
-      "imageHint": "rope access"
+      "description": "Trabajos en altura mediante técnicas de acceso por cuerda con seguridad",
+      "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
+      "imageHint": "trabajos verticales"
     },
     {
       "id": "service-reformas",
-      "description": "Operario realizando reparaciones y alisados de paredes",
-      "imageUrl": "https://picsum.photos/seed/plaster/800/800",
-      "imageHint": "wall repair"
+      "description": "Reparaciones rápidas de paredes, alisados y eliminación de humedades",
+      "imageUrl": "/images/services/07-reformas-rapidas-reparaciones.jpg",
+      "imageHint": "reformas pintura"
     },
     {
       "id": "service-comunidades",
-      "description": "Mantenimiento de pintura en pasillos y zonas comunes de edificios",
-      "imageUrl": "https://picsum.photos/seed/maint/800/800",
-      "imageHint": "building maintenance"
+      "description": "Mantenimiento de pintura profesional en zonas comunes y comunidades",
+      "imageUrl": "/images/services/08-mantenimiento-comunidades-pasillo.jpg",
+      "imageHint": "mantenimiento comunidades"
     },
     {
       "id": "gallery1",
-      "description": "Fachada terminada en Sevilla",
-      "imageUrl": "https://picsum.photos/seed/facade1/600/800",
-      "imageHint": "building exterior"
+      "description": "Acabado de pintura general en vivienda",
+      "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
+      "imageHint": "pintura vivienda"
     },
     {
       "id": "gallery2",
-      "description": "Pintura vertical en torre de viviendas",
-      "imageUrl": "https://picsum.photos/seed/vert1/600/400",
-      "imageHint": "vertical work"
+      "description": "Pintura técnica en altura",
+      "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
+      "imageHint": "pintura vertical"
     },
     {
       "id": "gallery3",
-      "description": "Impermeabilización de azotea",
-      "imageUrl": "https://picsum.photos/seed/roof1/600/700",
-      "imageHint": "roof waterproofing"
+      "description": "Protección de cubiertas",
+      "imageUrl": "/images/services/04-impermeabilizacion-tejado-terraza.jpg",
+      "imageHint": "impermeabilizacion"
     },
     {
       "id": "gallery4",
-      "description": "Pintura de interiores de lujo",
-      "imageUrl": "https://picsum.photos/seed/int1/600/900",
-      "imageHint": "interior design"
+      "description": "Rehabilitación de bloque de viviendas",
+      "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
+      "imageHint": "fachada sevilla"
     },
     {
       "id": "gallery5",
-      "description": "Suelo epoxi industrial",
-      "imageUrl": "https://picsum.photos/seed/epoxy/600/500",
-      "imageHint": "epoxy floor"
+      "description": "Pintura de suelos industriales",
+      "imageUrl": "/images/services/02-pintura-industrial-nave-fabrica.jpg",
+      "imageHint": "suelo industrial"
     },
     {
       "id": "gallery6",
-      "description": "Alisado de paredes liso",
-      "imageUrl": "https://picsum.photos/seed/smooth/600/850",
-      "imageHint": "plastering wall"
+      "description": "Mantenimiento profesional",
+      "imageUrl": "/images/services/08-mantenimiento-comunidades-pasillo.jpg",
+      "imageHint": "pintura comunidades"
     }
   ]
 }
