@@ -4,92 +4,92 @@
     {
       "id": "hero-vertical",
       "description": "Pintor profesional realizando trabajos verticales en fachada de edificio",
-      "imageUrl": "https://picsum.photos/seed/vertical-painter-real/1920/1080",
-      "imageHint": "vertical painter"
+      "imageUrl": "https://picsum.photos/seed/vertpainter/1920/1080",
+      "imageHint": "rope access"
     },
     {
       "id": "service-general",
       "description": "Pintor profesional de interiores aplicando rodillo en pared de salón",
-      "imageUrl": "https://picsum.photos/seed/real-int-paint/800/800",
+      "imageUrl": "https://picsum.photos/seed/painterint/800/800",
       "imageHint": "painter interior"
     },
     {
       "id": "service-industrial",
       "description": "Trabajador profesional aplicando pintura industrial con spray en nave",
-      "imageUrl": "https://picsum.photos/seed/real-ind-paint/800/800",
+      "imageUrl": "https://picsum.photos/seed/paintind/800/800",
       "imageHint": "industrial painting"
     },
     {
       "id": "service-decorativa",
       "description": "Pintor experto realizando acabados de alta decoración con brocha",
-      "imageUrl": "https://picsum.photos/seed/real-deco-paint/800/800",
-      "imageHint": "decorative painter"
+      "imageUrl": "https://picsum.photos/seed/paintdeco/800/800",
+      "imageHint": "decorative painting"
     },
     {
       "id": "service-impermeabilizacion",
       "description": "Obrero instalando membrana líquida impermeabilizante en terraza",
-      "imageUrl": "https://picsum.photos/seed/real-waterproof/800/800",
-      "imageHint": "waterproofing terrace"
+      "imageUrl": "https://picsum.photos/seed/waterproof/800/800",
+      "imageHint": "waterproofing roof"
     },
     {
       "id": "service-fachada",
       "description": "Rehabilitación profesional de fachada en edificio de viviendas",
-      "imageUrl": "https://picsum.photos/seed/real-facade/800/800",
-      "imageHint": "facade renovation"
+      "imageUrl": "https://picsum.photos/seed/facade/800/800",
+      "imageHint": "facade painting"
     },
     {
       "id": "service-vertical",
       "description": "Técnico especialista en trabajos verticales con cuerdas y arnés",
-      "imageUrl": "https://picsum.photos/seed/real-rope-access/800/800",
+      "imageUrl": "https://picsum.photos/seed/vertical/800/800",
       "imageHint": "rope access"
     },
     {
       "id": "service-reformas",
       "description": "Operario realizando reparaciones y alisados de paredes",
-      "imageUrl": "https://picsum.photos/seed/real-repair/800/800",
-      "imageHint": "wall plastering"
+      "imageUrl": "https://picsum.photos/seed/plaster/800/800",
+      "imageHint": "wall repair"
     },
     {
       "id": "service-comunidades",
       "description": "Mantenimiento de pintura en pasillos y zonas comunes de edificios",
-      "imageUrl": "https://picsum.photos/seed/real-community/800/800",
+      "imageUrl": "https://picsum.photos/seed/maint/800/800",
       "imageHint": "building maintenance"
     },
     {
       "id": "gallery1",
       "description": "Fachada terminada en Sevilla",
-      "imageUrl": "https://picsum.photos/seed/sev-fac1/600/800",
-      "imageHint": "facade painting"
+      "imageUrl": "https://picsum.photos/seed/facade1/600/800",
+      "imageHint": "building exterior"
     },
     {
       "id": "gallery2",
       "description": "Pintura vertical en torre de viviendas",
-      "imageUrl": "https://picsum.photos/seed/vert-ed1/600/400",
-      "imageHint": "building work"
+      "imageUrl": "https://picsum.photos/seed/vert1/600/400",
+      "imageHint": "vertical work"
     },
     {
       "id": "gallery3",
       "description": "Impermeabilización de azotea",
-      "imageUrl": "https://picsum.photos/seed/roof-imp/600/700",
-      "imageHint": "roof work"
+      "imageUrl": "https://picsum.photos/seed/roof1/600/700",
+      "imageHint": "roof waterproofing"
     },
     {
       "id": "gallery4",
       "description": "Pintura de interiores de lujo",
-      "imageUrl": "https://picsum.photos/seed/living-room/600/900",
-      "imageHint": "painted living"
+      "imageUrl": "https://picsum.photos/seed/int1/600/900",
+      "imageHint": "interior design"
     },
     {
       "id": "gallery5",
       "description": "Suelo epoxi industrial",
-      "imageUrl": "https://picsum.photos/seed/ind-floor/600/500",
+      "imageUrl": "https://picsum.photos/seed/epoxy/600/500",
       "imageHint": "epoxy floor"
     },
     {
       "id": "gallery6",
       "description": "Alisado de paredes liso",
-      "imageUrl": "https://picsum.photos/seed/smooth-wall/600/850",
-      "imageHint": "smooth wall"
+      "imageUrl": "https://picsum.photos/seed/smooth/600/850",
+      "imageHint": "plastering wall"
     }
   ]
 }
