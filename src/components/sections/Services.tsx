@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Brush, Building2, Mountain, Droplets } from "lucide-react";
@@ -9,25 +10,25 @@ import Link from "next/link";
 const homeServices = [
   {
     title: "Pintura General",
-    description: "Trabajos en todo tipo de superficies, tanto en interior como en exterior con acabados de alta calidad.",
+    description: "Acabados de alta calidad en interiores y exteriores con limpieza total garantizada en cada obra.",
     icon: Brush,
     imageId: "service-general",
   },
   {
     title: "Fachadas y Edificios",
-    description: "Rehabilitación completa de fachadas y limpieza de superficies exteriores con máxima eficiencia.",
+    description: "Rehabilitación técnica de fachadas y saneamiento de paramentos para comunidades y particulares.",
     icon: Building2,
     imageId: "service-fachada",
   },
   {
     title: "Trabajos Verticales",
-    description: "Especialistas en accesos difíciles y pintura en altura con las máximas medidas de seguridad sin andamios.",
+    description: "Especialistas en accesos mediante cuerdas y pintura en altura con máxima seguridad IRATA sin andamios.",
     icon: Mountain,
     imageId: "service-vertical",
   },
   {
     title: "Impermeabilización",
-    description: "Protección total contra filtraciones en cubiertas, terrazas y azoteas con garantía de durabilidad.",
+    description: "Sistemas de protección contra filtraciones en cubiertas y terrazas con poliuretano de larga duración.",
     icon: Droplets,
     imageId: "service-impermeabilizacion",
   },
@@ -61,24 +62,25 @@ export function Services() {
                 key={index} 
                 className="brutalist-card bg-white group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full"
               >
-                <div className="relative aspect-video mb-6 border-2 border-black overflow-hidden bg-muted shrink-0">
+                <div className="relative aspect-square mb-6 border-2 border-black overflow-hidden bg-muted shrink-0">
                   {serviceImg?.imageUrl && (
                     <Image
                       src={serviceImg.imageUrl}
-                      alt={service.title}
+                      alt={`Pintor profesional ${service.title.toLowerCase()} Sevilla`}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500 grayscale group-hover:grayscale-0"
+                      data-ai-hint={serviceImg.imageHint}
                     />
                   )}
-                  <div className="absolute top-4 right-4 bg-primary text-white p-3 border-2 border-black z-10">
+                  <div className="absolute top-4 right-4 bg-primary text-white p-3 border-2 border-black z-10 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
                     <Icon size={24} />
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-black uppercase mb-3 tracking-tighter leading-tight break-words">
+                  <h3 className="text-base font-black uppercase mb-3 tracking-tighter leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-secondary font-medium leading-relaxed text-sm line-clamp-3">
+                  <p className="text-secondary font-medium leading-relaxed text-xs line-clamp-3">
                     {service.description}
                   </p>
                 </div>
