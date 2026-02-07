@@ -57,39 +57,99 @@
     },
     {
       "id": "gallery1",
-      "description": "Acabado de pintura general en vivienda",
-      "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
-      "imageHint": "pintura vivienda"
+      "description": "Rehabilitación de fachada en bloque de viviendas",
+      "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
+      "imageHint": "fachada sevilla"
     },
     {
       "id": "gallery2",
-      "description": "Pintura técnica en altura",
+      "description": "Pintura técnica en trabajos verticales",
       "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
       "imageHint": "pintura vertical"
     },
     {
       "id": "gallery3",
-      "description": "Protección de cubiertas",
+      "description": "Impermeabilización de azotea con poliuretano",
       "imageUrl": "/images/services/04-impermeabilizacion-tejado-terraza.jpg",
       "imageHint": "impermeabilizacion"
     },
     {
       "id": "gallery4",
-      "description": "Rehabilitación de bloque de viviendas",
-      "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
-      "imageHint": "fachada sevilla"
+      "description": "Acabado de alta decoración en interiores",
+      "imageUrl": "/images/services/03-pintura-decorativa-efectos-pared.jpg",
+      "imageHint": "pintura interior"
     },
     {
       "id": "gallery5",
-      "description": "Pintura de suelos industriales",
+      "description": "Pintura de suelos en nave industrial",
       "imageUrl": "/images/services/02-pintura-industrial-nave-fabrica.jpg",
-      "imageHint": "suelo industrial"
+      "imageHint": "pintura nave"
     },
     {
       "id": "gallery6",
-      "description": "Mantenimiento profesional",
+      "description": "Mantenimiento de portales y comunidades",
       "imageUrl": "/images/services/08-mantenimiento-comunidades-pasillo.jpg",
-      "imageHint": "pintura comunidades"
+      "imageHint": "comunidades sevilla"
+    },
+    {
+      "id": "gallery7",
+      "description": "Alisado de paredes y pintura plástica",
+      "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
+      "imageHint": "alisado paredes"
+    },
+    {
+      "id": "gallery8",
+      "description": "Reparación de grietas en paramento exterior",
+      "imageUrl": "/images/services/07-reformas-rapidas-reparaciones.jpg",
+      "imageHint": "reformas pintura"
+    },
+    {
+      "id": "gallery9",
+      "description": "Pintura de fachada mediante acceso por cuerda",
+      "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
+      "imageHint": "vertical sevilla"
+    },
+    {
+      "id": "gallery10",
+      "description": "Tratamiento impermeabilizante en tejado",
+      "imageUrl": "/images/services/04-impermeabilizacion-tejado-terraza.jpg",
+      "imageHint": "goteras sevilla"
+    },
+    {
+      "id": "gallery11",
+      "description": "Protección industrial de estructuras metálicas",
+      "imageUrl": "/images/services/02-pintura-industrial-nave-fabrica.jpg",
+      "imageHint": "pintura metal"
+    },
+    {
+      "id": "gallery12",
+      "description": "Renovación estética de zonas comunes",
+      "imageUrl": "/images/services/08-mantenimiento-comunidades-pasillo.jpg",
+      "imageHint": "pasillo comunidad"
+    },
+    {
+      "id": "gallery13",
+      "description": "Acabado de pintura en fachadas históricas",
+      "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
+      "imageHint": "pintura exterior"
+    },
+    {
+      "id": "gallery14",
+      "description": "Eliminación de humedades en interiores",
+      "imageUrl": "/images/services/07-reformas-rapidas-reparaciones.jpg",
+      "imageHint": "humedad pared"
+    },
+    {
+      "id": "gallery15",
+      "description": "Pintura general en vivienda unifamiliar",
+      "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
+      "imageHint": "pintor casa"
+    },
+    {
+      "id": "gallery16",
+      "description": "Estuco veneciano y alta decoración",
+      "imageUrl": "/images/services/03-pintura-decorativa-efectos-pared.jpg",
+      "imageHint": "estuco sevilla"
     }
   ]
 }

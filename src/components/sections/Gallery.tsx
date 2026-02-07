@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -21,8 +22,8 @@ export function Gallery() {
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-4 inline-block border-b-4 md:border-b-8 border-primary leading-tight">
             Trabajos Realizados
           </h2>
-          <p className="text-lg md:text-xl font-bold text-accent mt-4">
-            Compromiso real con la calidad en cada proyecto.
+          <p className="text-lg md:text-xl font-bold text-secondary mt-4">
+            Compromiso real con la calidad en cada proyecto. Resultados profesionales garantizados.
           </p>
         </div>
 
