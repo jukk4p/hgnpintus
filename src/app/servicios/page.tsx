@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Navbar } from "@/components/Navbar";
@@ -6,6 +5,7 @@ import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { Toaster } from "@/components/ui/toaster";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { 
   Brush, 
@@ -160,6 +160,11 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 text-center space-y-4">
           <h3 className="text-3xl font-black uppercase tracking-tighter italic">HGNPINTURAS</h3>
           <p className="font-bold opacity-80">© {new Date().getFullYear()} Hermanos Gómez Novo. Calidad y Confianza.</p>
+          <div className="flex justify-center gap-6 pt-4 flex-wrap">
+            <Link href="/aviso-legal" className="hover:text-primary transition-colors font-bold uppercase text-sm">Aviso Legal</Link>
+            <Link href="/privacidad" className="hover:text-primary transition-colors font-bold uppercase text-sm">Privacidad</Link>
+            <Link href="/cookies" className="hover:text-primary transition-colors font-bold uppercase text-sm">Cookies</Link>
+          </div>
         </div>
       </footer>
 
