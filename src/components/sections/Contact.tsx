@@ -25,6 +25,18 @@ export function Contact() {
     }, 1500);
   };
 
+  const services = [
+    "Pintura General", 
+    "Fachadas", 
+    "Verticales", 
+    "Industrial", 
+    "Decorativa", 
+    "Impermeabilización", 
+    "Reformas", 
+    "Comunidades", 
+    "Otros"
+  ];
+
   return (
     <section id="contacto" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
@@ -78,7 +90,7 @@ export function Contact() {
               <div className="space-y-4">
                 <Label className="text-xs font-black uppercase block mb-2">¿Qué necesitas?</Label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {["Pintura General", "Fachadas", "Verticales", "Industrial"].map((s) => (
+                  {services.map((s) => (
                     <div key={s} className="flex items-center space-x-2 bg-accent/10 p-2 border border-black/5 hover:bg-accent/20 transition-colors">
                       <Checkbox id={s} className="border-2 border-black rounded-none" />
                       <label htmlFor={s} className="text-xs font-bold uppercase cursor-pointer flex-1">{s}</label>
