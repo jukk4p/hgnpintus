@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Navbar } from "@/components/Navbar";
@@ -58,13 +57,13 @@ export default function ProjectsPage() {
     <main className="min-h-screen">
       <Navbar />
       
-      <section className="py-24 bg-background">
+      <section className="pt-28 pb-12 md:pt-40 md:pb-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-16">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-bebas uppercase tracking-tighter mb-6 leading-none"
+              className="text-5xl md:text-7xl font-bebas uppercase tracking-tighter mb-6 leading-tight md:leading-none"
             >
               NUESTROS <br />
               <span className="text-primary">PROYECTOS</span>

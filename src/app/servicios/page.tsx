@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Navbar } from "@/components/Navbar";
@@ -92,13 +91,13 @@ export default function ServicesPage() {
     <main className="min-h-screen">
       <Navbar />
       
-      <section className="py-12 md:py-32 bg-background">
+      <section className="pt-28 pb-12 md:pt-40 md:pb-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mb-16 md:mb-24">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-8xl font-bebas uppercase tracking-tighter mb-8 leading-[0.9] text-primary"
+              className="text-4xl md:text-8xl font-bebas uppercase tracking-tighter mb-8 leading-tight md:leading-[0.9] text-primary"
             >
               NUESTROS SERVICIOS <br />
               <span className="text-accent">PROFESIONALES</span>
@@ -136,8 +135,8 @@ export default function ServicesPage() {
                         className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
                       />
                     )}
-                    <div className="absolute top-4 left-4 bg-primary text-white p-3 border-2 border-black z-10 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                      <Icon size={24} className="text-accent" />
+                    <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white p-2 md:p-3 border-2 border-black z-10 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                      <Icon size={20} className="text-accent md:w-6 md:h-6" />
                     </div>
                   </div>
                   

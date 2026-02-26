@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,26 +27,6 @@
     --ring: 41 78% 61%;
     --radius: 0.75rem;
   }
-
-  .dark {
-    --background: 240 29% 15%;
-    --foreground: 0 0% 98%;
-    --card: 240 29% 20%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 29% 15%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 29% 15%;
-    --secondary: 240 29% 25%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 29% 25%;
-    --muted-foreground: 0 0% 65%;
-    --accent: 41 78% 61%;
-    --accent-foreground: 240 29% 15%;
-    --border: 240 29% 30%;
-    --input: 240 29% 30%;
-    --ring: 41 78% 61%;
-  }
 }
 
 @layer base {
@@ -64,32 +43,20 @@
   }
 }
 
+.brutalist-card {
+  @apply border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-300;
+}
+
+.brutalist-card:hover {
+  @apply translate-x-[-2px] translate-y-[-2px] shadow-[6px_6px_0px_0px_rgba(0,0,0,1)];
+}
+
 .font-bebas {
   font-family: 'Bebas Neue', sans-serif;
 }
 
 .font-playfair {
   font-family: 'Playfair Display', serif;
-}
-
-.gradient-gold-border {
-  position: relative;
-  background: white;
-}
-
-.gradient-gold-border::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  background: linear-gradient(45deg, #E8B94F, #D4581A, #E8B94F);
-  z-index: -1;
-  border-radius: inherit;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.gradient-gold-border:hover::before {
-  opacity: 1;
 }
 
 .texture-overlay {
@@ -107,10 +74,6 @@
 
 .hero-gradient {
   background: linear-gradient(to right, rgba(26, 26, 46, 0.9) 0%, rgba(26, 26, 46, 0.4) 100%);
-}
-
-.btn-cta {
-  @apply bg-[#D4581A] text-white hover:scale-105 transition-all duration-300 shadow-xl;
 }
 
 @keyframes float {

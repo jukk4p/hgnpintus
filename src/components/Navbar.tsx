@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -12,12 +11,15 @@ import { usePathname } from "next/navigation";
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
-  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(pathname !== "/");
   const { scrollY } = useScroll();
   const lastScrollY = useRef(0);
 
-  // Bloquear scroll cuando el menú móvil está abierto
+  useEffect(() => {
+    setIsScrolled(pathname !== "/" || window.scrollY > 50);
+  }, [pathname]);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -26,7 +28,6 @@ export function Navbar() {
     }
   }, [isOpen]);
 
-  // Lógica de Navbar Inteligente
   useMotionValueEvent(scrollY, "change", (latest) => {
     const direction = latest > lastScrollY.current ? "down" : "up";
     const threshold = 150;
@@ -37,6 +38,7 @@ export function Navbar() {
         setIsScrolled(false);
       } else if (direction === "down" && latest > threshold) {
         setIsVisible(false);
+        setIsScrolled(true);
       } else if (direction === "up") {
         setIsVisible(true);
         setIsScrolled(true);
@@ -87,7 +89,6 @@ export function Navbar() {
             </span>
           </Link>
           
-          {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-10">
             {navLinks.map((link) => (
               <Link 
@@ -124,7 +125,6 @@ export function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu Overlay */}
         <AnimatePresence>
           {isOpen && (
             <motion.div 
@@ -182,7 +182,6 @@ export function Navbar() {
                 </motion.div>
               </div>
 
-              {/* Elementos decorativos de fondo */}
               <div className="absolute bottom-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -mb-32 -mr-32 pointer-events-none" />
             </motion.div>
           )}
