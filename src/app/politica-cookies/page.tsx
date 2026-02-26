@@ -1,9 +1,18 @@
+
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function PoliticaCookiesPage() {
   return (
     <main className="min-h-screen bg-background">
       <section className="py-32 md:py-48">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="bg-white p-8 md:p-12 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] animate-fade-in-up">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="bg-white p-8 md:p-12 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+          >
             <h1 className="text-4xl md:text-6xl font-bebas uppercase tracking-tighter mb-8 border-b-4 border-primary inline-block text-primary">
               POLÍTICA DE <span className="text-accent">COOKIES</span>
             </h1>
@@ -38,7 +47,7 @@ export default function PoliticaCookiesPage() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </main>

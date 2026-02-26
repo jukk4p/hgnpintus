@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -5,10 +6,10 @@ import { Instagram, Facebook } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Footer() {
-  const [year, setYear] = useState<number>(new Date().getFullYear());
+  const [year, setYear] = useState<string>("");
 
   useEffect(() => {
-    setYear(new Date().getFullYear());
+    setYear(new Date().getFullYear().toString());
   }, []);
 
   return (
@@ -63,7 +64,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em]">
-            © {year} Hermanos Gómez Novo. Todos los derechos reservados.
+            © {year || "2025"} Hermanos Gómez Novo. Todos los derechos reservados.
           </p>
           <div className="flex gap-8 text-[10px] font-bold text-white/60 uppercase tracking-[0.3em]">
             <Link 
@@ -82,7 +83,7 @@ export function Footer() {
               href="/politica-cookies" 
               className="hover:text-accent transition-colors"
             >
-              Cookies
+              Política de Cookies
             </Link>
           </div>
         </div>
