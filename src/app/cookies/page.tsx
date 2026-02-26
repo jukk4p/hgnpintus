@@ -5,8 +5,13 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { Toaster } from "@/components/ui/toaster";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function CookiesPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -21,7 +26,7 @@ export default function CookiesPage() {
               POLÍTICA DE <span className="text-accent">COOKIES</span>
             </h1>
             
-            <div className="space-y-6 text-foreground/80 font-medium leading-relaxed">
+            <div className="space-y-6 text-foreground font-medium leading-relaxed">
               <p>
                 En HGNPINTURAS utilizamos cookies para facilitar la navegación y mejorar la experiencia del usuario. A continuación encontrará información sobre qué son las cookies, qué tipos de cookies utiliza este sitio web y cómo puede desactivarlas en su navegador.
               </p>

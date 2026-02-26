@@ -4,6 +4,10 @@ import Link from "next/link";
 import { Instagram, Facebook } from "lucide-react";
 
 export function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="py-24 bg-[#111827] text-white border-t border-white/5">
       <div className="container mx-auto px-6 md:px-12">
@@ -58,10 +62,28 @@ export function Footer() {
           <p className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em]">
             © {new Date().getFullYear()} Hermanos Gómez Novo. Todos los derechos reservados.
           </p>
-          <div className="flex gap-8 text-[10px] font-bold text-white/40 uppercase tracking-[0.3em]">
-            <Link href="/aviso-legal" className="hover:text-accent transition-colors">Aviso Legal</Link>
-            <Link href="/privacidad" className="hover:text-accent transition-colors">Privacidad</Link>
-            <Link href="/cookies" className="hover:text-accent transition-colors">Cookies</Link>
+          <div className="flex gap-8 text-[10px] font-bold text-white/60 uppercase tracking-[0.3em]">
+            <Link 
+              href="/aviso-legal" 
+              onClick={scrollToTop}
+              className="hover:text-accent transition-colors"
+            >
+              Aviso Legal
+            </Link>
+            <Link 
+              href="/privacidad" 
+              onClick={scrollToTop}
+              className="hover:text-accent transition-colors"
+            >
+              Privacidad
+            </Link>
+            <Link 
+              href="/cookies" 
+              onClick={scrollToTop}
+              className="hover:text-accent transition-colors"
+            >
+              Cookies
+            </Link>
           </div>
         </div>
       </div>
