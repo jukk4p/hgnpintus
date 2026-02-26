@@ -1,9 +1,10 @@
+
 import type {Metadata, Viewport} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Pintores Coria del Río | Fachadas y Verticales | Hnos Gómez Novo',
-  description: 'Especialistas en pintura profesional, rehabilitación de fachadas y trabajos verticales en Coria del Río y Sevilla. Más de 20 años de experiencia. Presupuesto gratis.',
+  title: 'Pintores en Coria del Río y Sevilla | Fachadas y Verticales | HGN Pinturas',
+  description: 'Empresa de pintura profesional en Coria del Río y toda Sevilla. Especialistas en fachadas, trabajos verticales sin andamios e impermeabilización. Presupuesto gratis en 24h.',
   openGraph: {
     title: 'Hermanos Gómez Novo Pinturas - Sevilla',
     description: 'Expertos en pintura profesional, industrial y vertical en Sevilla.',
@@ -26,10 +27,12 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Hermanos Gómez Novo Pinturas",
-    "image": "https://picsum.photos/seed/painter-hero/800/600",
+    "image": "https://hnosgomeznovopinturas.es/images/logo.png",
+    "telephone": "+34692303131",
+    "email": "info@hnosgomeznovopinturas.es",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Avenida Blanca Paloma, 64",
+      "streetAddress": "Avda. Blanca Paloma, 64",
       "addressLocality": "Coria del Río",
       "addressRegion": "Sevilla",
       "postalCode": "41100",
@@ -37,20 +40,21 @@ export default function RootLayout({
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 37.2882,
-      "longitude": -6.0527
+      "latitude": 37.2881,
+      "longitude": -6.0572
     },
     "url": "https://hnosgomeznovopinturas.es",
-    "telephone": "+34692303131",
     "priceRange": "€€",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "20:00"
-      }
-    ]
+    "areaServed": ["Coria del Río", "Sevilla", "Los Palacios", "Dos Hermanas", "Utrera", "Alcalá de Guadaíra"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de Pintura",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pintura de Fachadas"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Trabajos Verticales sin Andamios"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Impermeabilización de Tejados"}}
+      ]
+    }
   };
 
   return (
@@ -58,13 +62,13 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-body antialiased bg-background selection:bg-primary selection:text-white text-[16px]">
+      <body className="font-body antialiased bg-background text-foreground">
         {children}
       </body>
     </html>

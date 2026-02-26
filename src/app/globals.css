@@ -1,29 +1,52 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 210 40% 98%; /* #F7FAFC */
-    --foreground: 218 17% 15%;
+    --background: 60 20% 97%; /* #F5F5F0 */
+    --foreground: 0 0% 18%; /* #2D2D2D */
     --card: 0 0% 100%;
-    --card-foreground: 218 17% 15%;
+    --card-foreground: 0 0% 18%;
     --popover: 0 0% 100%;
-    --popover-foreground: 218 17% 15%;
-    --primary: 214 49% 34%; /* #2C5282 Blue Steel */
+    --popover-foreground: 0 0% 18%;
+    --primary: 240 29% 15%; /* #1A1A2E Azul Noche */
     --primary-foreground: 0 0% 100%;
-    --secondary: 218 17% 35%; /* #4A5568 Gray */
-    --secondary-foreground: 0 0% 100%;
-    --muted: 218 17% 92%;
-    --muted-foreground: 218 17% 40%;
-    --accent: 210 40% 98%; /* #F7FAFC */
-    --accent-foreground: 214 49% 34%;
+    --secondary: 240 10% 90%;
+    --secondary-foreground: 240 29% 15%;
+    --muted: 60 10% 92%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 41 78% 61%; /* #E8B94F Dorado */
+    --accent-foreground: 240 29% 15%;
+    --cta: 20 78% 47%; /* #D4581A Naranja */
+    --cta-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 218 17% 15%;
-    --input: 218 17% 15%;
-    --ring: 214 49% 34%;
-    --radius: 0rem;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 41 78% 61%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 240 29% 15%;
+    --foreground: 0 0% 98%;
+    --card: 240 29% 20%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 29% 15%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 29% 15%;
+    --secondary: 240 29% 25%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 29% 25%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 41 78% 61%;
+    --accent-foreground: 240 29% 15%;
+    --border: 240 29% 30%;
+    --input: 240 29% 30%;
+    --ring: 41 78% 61%;
   }
 }
 
@@ -32,78 +55,70 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-body text-[16px] antialiased;
+    @apply bg-background text-foreground font-body antialiased selection:bg-accent selection:text-primary;
+    font-size: 17px;
+    line-height: 1.7;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline uppercase;
+    @apply font-headline uppercase tracking-tight;
   }
 }
 
-.brutalist-border {
-  border: 3px solid hsl(var(--border));
-  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-@media (min-width: 768px) {
-  .brutalist-border {
-    border-width: 4px;
-    box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
-  }
-  .brutalist-border:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-  }
+.font-playfair {
+  font-family: 'Playfair Display', serif;
 }
 
-.brutalist-card {
-  @apply brutalist-border bg-card p-4 md:p-6;
+.gradient-gold-border {
+  position: relative;
+  background: white;
 }
 
-.hero-overlay {
-  background: linear-gradient(to bottom, rgba(44, 82, 130, 0.6), rgba(15, 23, 42, 0.9));
+.gradient-gold-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, #E8B94F, #D4581A, #E8B94F);
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.gradient-gold-border:hover::before {
+  opacity: 1;
 }
 
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
+.texture-overlay {
+  position: relative;
 }
 
-@keyframes bounce-slow {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+.texture-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/pinstriped-suit.png");
+  opacity: 0.05;
+  pointer-events: none;
 }
 
-.animate-bounce-slow {
-  animation: bounce-slow 2s infinite ease-in-out;
+.hero-gradient {
+  background: linear-gradient(to right, rgba(26, 26, 46, 0.9) 0%, rgba(26, 26, 46, 0.4) 100%);
 }
 
-.button-gradient {
-  @apply bg-primary text-white;
-  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+.btn-cta {
+  @apply bg-[#D4581A] text-white hover:scale-105 transition-all duration-300 shadow-xl;
 }
 
-.button-gradient:hover {
-  filter: brightness(1.1);
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
-/* Custom scrollbar for better mobile UX */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  @apply bg-background;
-}
-::-webkit-scrollbar-thumb {
-  @apply bg-primary/20 hover:bg-primary/40 rounded-full;
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }

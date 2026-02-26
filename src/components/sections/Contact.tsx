@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -6,12 +7,15 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Phone, Mail, Send } from "lucide-react";
+import { Phone, Mail, Send, MapPin, Clock, Shield, Award, Users } from "lucide-react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function Contact() {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
+  const bgImg = PlaceHolderImages.find(i => i.id === "gallery1");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,92 +29,123 @@ export function Contact() {
     }, 1500);
   };
 
-  const services = [
-    "Pintura General", 
-    "Fachadas", 
-    "Verticales", 
-    "Industrial", 
-    "Decorativa", 
-    "Impermeabilización", 
-    "Reformas", 
-    "Comunidades", 
-    "Otros"
-  ];
+  const services = ["Fachadas", "Verticales", "Interiores", "Impermeabilización", "Industrial", "Decorativa"];
 
   return (
-    <section id="contacto" className="py-12 md:py-24 bg-secondary">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-start">
-          <div className="space-y-6 md:space-y-12">
+    <section id="contacto" className="relative py-32 overflow-hidden bg-primary">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0 opacity-20">
+        {bgImg && <Image src={bgImg.imageUrl} alt="HGN Pinturas Contacto" fill className="object-cover" />}
+        <div className="absolute inset-0 bg-primary/80 backdrop-blur-sm" />
+      </div>
+
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+          
+          <div className="space-y-12">
             <div>
-              <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-4 inline-block border-b-4 md:border-b-8 border-primary leading-tight">
-                ¿Hablamos?
-              </h2>
-              <p className="text-base md:text-xl font-bold text-accent max-w-md opacity-90">
-                Presupuesto sin compromiso en toda Sevilla. Respuesta en 24h.
+              <motion.h2 
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="text-6xl md:text-8xl font-bebas text-white leading-[0.85] mb-6"
+              >
+                ¿Tienes un proyecto? <span className="text-accent">Hablemos.</span>
+              </motion.h2>
+              <p className="text-xl text-white/60 font-medium">
+                Presupuesto sin compromiso · Respuesta en menos de 24h
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 md:gap-6">
-              <div className="flex items-center gap-4 bg-black/10 p-4 border border-white/10">
-                <div className="bg-primary text-white p-2 md:p-3 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <Phone size={18} className="md:w-5 md:h-5" />
-                </div>
-                <div>
-                  <h4 className="text-[10px] md:text-sm font-black uppercase text-accent/60">Llamar</h4>
-                  <p className="text-sm md:text-xl font-bold text-accent">692 303 131</p>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+              <ContactInfoItem icon={Phone} label="Llamar" value="692 303 131" href="tel:+34692303131" />
+              <ContactInfoItem icon={Mail} label="Email" value="info@hnosgomeznovopinturas.es" href="mailto:info@hnosgomeznovopinturas.es" />
+              <ContactInfoItem icon={MapPin} label="Ubicación" value="Coria del Río · Toda Sevilla" />
+              <ContactInfoItem icon={Clock} label="Horario" value="Lun-Vie: 8:00–19:00" />
+            </div>
 
-              <div className="flex items-center gap-4 bg-black/10 p-4 border border-white/10">
-                <div className="bg-accent text-white p-2 md:p-3 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <Mail size={18} className="md:w-5 md:h-5" />
-                </div>
-                <div>
-                  <h4 className="text-[10px] md:text-sm font-black uppercase text-accent/60">Email</h4>
-                  <p className="text-[11px] md:text-xl font-bold text-accent break-all">info@hnosgomeznovopinturas.es</p>
-                </div>
+            <div className="pt-12 border-t border-white/10">
+              <div className="flex flex-wrap gap-6">
+                 <BadgeTrust icon={Shield} text="Seguro RC" />
+                 <BadgeTrust icon={Award} text="Certificado IRATA" />
+                 <BadgeTrust icon={Users} text="Empresa Registrada" />
               </div>
+            </div>
+            
+            <div className="rounded-xl overflow-hidden border-2 border-white/10 h-64 grayscale contrast-125 hover:grayscale-0 transition-all duration-500">
+               <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.328764038166!2d-6.0527!3d37.2882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd120e29206b83f3%3A0x6334543d8a17688c!2sAv.%20Blanca%20Paloma%2C%2064%2C%2041100%20Coria%20del%20R%C3%ADo%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+                width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy"
+              ></iframe>
             </div>
           </div>
 
-          <div className="brutalist-card bg-white p-5 md:p-8">
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid grid-cols-1 gap-5">
-                <div className="space-y-1.5">
-                  <Label htmlFor="name" className="text-[10px] font-black uppercase tracking-wider">Nombre Completo</Label>
-                  <Input id="name" required className="border-2 border-black rounded-none h-12 text-sm" placeholder="Tu nombre..." />
+          <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="bg-white p-10 md:p-16 rounded-3xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)]"
+          >
+            <form onSubmit={handleSubmit} className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-2">
+                  <Label htmlFor="name" className="text-[10px] font-bold uppercase tracking-widest text-primary/40">Nombre Completo</Label>
+                  <Input id="name" required className="bg-secondary/50 border-none h-14 rounded-xl text-primary font-bold placeholder:text-primary/20" placeholder="Tu nombre..." />
                 </div>
-                <div className="space-y-1.5">
-                  <Label htmlFor="phone" className="text-[10px] font-black uppercase tracking-wider">Teléfono de Contacto</Label>
-                  <Input id="phone" type="tel" required className="border-2 border-black rounded-none h-12 text-sm" placeholder="Tu teléfono..." />
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="text-[10px] font-bold uppercase tracking-widest text-primary/40">Teléfono</Label>
+                  <Input id="phone" type="tel" required className="bg-secondary/50 border-none h-14 rounded-xl text-primary font-bold placeholder:text-primary/20" placeholder="Tu número..." />
                 </div>
               </div>
               
-              <div className="space-y-3">
-                <Label className="text-[10px] font-black uppercase block tracking-wider mb-2">¿Qué servicios necesitas?</Label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <div className="space-y-4">
+                <Label className="text-[10px] font-bold uppercase tracking-widest text-primary/40 block mb-4">¿Qué servicios necesitas?</Label>
+                <div className="flex flex-wrap gap-2">
                   {services.map((s) => (
-                    <div key={s} className="flex items-center space-x-2 bg-accent/10 p-2.5 border border-black/5 hover:bg-accent/20 transition-colors cursor-pointer">
-                      <Checkbox id={s} className="border-2 border-black rounded-none" />
-                      <label htmlFor={s} className="text-[10px] font-bold uppercase cursor-pointer flex-1 leading-none">{s}</label>
-                    </div>
+                    <button 
+                      key={s} 
+                      type="button"
+                      className="px-4 py-2 rounded-lg border border-primary/10 text-xs font-bold uppercase tracking-widest text-primary/60 hover:bg-accent hover:text-primary hover:border-accent transition-all"
+                    >
+                      {s}
+                    </button>
                   ))}
                 </div>
               </div>
 
-              <div className="space-y-1.5">
-                <Label htmlFor="message" className="text-[10px] font-black uppercase tracking-wider">Detalles del proyecto</Label>
-                <Textarea id="message" required className="min-h-[100px] border-2 border-black rounded-none text-sm" placeholder="Explícanos brevemente qué necesitas..." />
+              <div className="space-y-2">
+                <Label htmlFor="message" className="text-[10px] font-bold uppercase tracking-widest text-primary/40">Detalles del proyecto</Label>
+                <Textarea id="message" required className="bg-secondary/50 border-none min-h-[120px] rounded-xl text-primary font-bold placeholder:text-primary/20" placeholder="Háblanos de lo que necesitas..." />
               </div>
 
-              <Button type="submit" disabled={loading} className="w-full h-14 md:h-16 text-base md:text-xl font-black uppercase bg-primary hover:bg-primary/90 brutalist-border">
-                {loading ? "ENVIANDO..." : "SOLICITAR PRESUPUESTO"} <Send className="ml-2" size={20} />
+              <Button type="submit" disabled={loading} className="w-full h-20 text-xl font-bold uppercase tracking-widest bg-[#D4581A] hover:bg-[#D4581A]/90 text-white rounded-xl shadow-2xl transition-all hover:scale-[1.02]">
+                {loading ? "PROCESANDO..." : "SOLICITAR MI PRESUPUESTO GRATIS →"}
               </Button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
+  );
+}
+
+function ContactInfoItem({ icon: Icon, label, value, href }: { icon: any, label: string, value: string, href?: string }) {
+  const content = (
+    <div className="group">
+      <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 mb-1">{label}</div>
+      <div className="flex items-center gap-3">
+        <Icon size={20} className="text-accent group-hover:scale-110 transition-transform" />
+        <span className="text-xl font-bebas text-white tracking-widest group-hover:text-accent transition-colors">{value}</span>
+      </div>
+    </div>
+  );
+
+  return href ? <a href={href}>{content}</a> : content;
+}
+
+function BadgeTrust({ icon: Icon, text }: { icon: any, text: string }) {
+  return (
+    <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full">
+      <Icon size={14} className="text-accent" />
+      <span className="text-[10px] font-bold text-white/60 uppercase tracking-widest">{text}</span>
+    </div>
   );
 }
