@@ -7,16 +7,21 @@ import { Menu, X, Phone } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // La navbar es sólida si hemos hecho scroll O si no estamos en la Home (donde no hay Hero oscuro)
+  const isSolid = scrolled || pathname !== "/";
 
   const navLinks = [
     { href: "/", label: "Inicio" },
@@ -29,7 +34,7 @@ export function Navbar() {
   return (
     <nav className={cn(
       "fixed top-0 z-50 w-full transition-all duration-500",
-      scrolled 
+      isSolid 
         ? "bg-primary/95 backdrop-blur-md py-3 shadow-2xl border-b border-white/10" 
         : "bg-transparent py-6"
     )}>
@@ -50,16 +55,22 @@ export function Navbar() {
             <Link 
               key={link.href} 
               href={link.href} 
-              className="relative font-medium text-sm text-white/90 hover:text-accent transition-colors group"
+              className={cn(
+                "relative font-medium text-sm transition-colors group uppercase tracking-widest",
+                pathname === link.href ? "text-accent" : "text-white/90 hover:text-accent"
+              )}
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+              <span className={cn(
+                "absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300",
+                pathname === link.href ? "w-full" : "w-0 group-hover:w-full"
+              )}></span>
             </Link>
           ))}
         </div>
 
         <div className="flex items-center gap-6">
-          <Button asChild className="hidden sm:inline-flex font-bold bg-accent text-primary hover:bg-white transition-all px-8 rounded-sm shadow-lg">
+          <Button asChild className="hidden sm:inline-flex font-bold bg-accent text-primary hover:bg-white transition-all px-8 rounded-sm shadow-lg border-none">
             <a href="tel:+34692303131" className="flex items-center gap-2">
               <Phone size={16} /> 692 303 131
             </a>
@@ -96,7 +107,10 @@ export function Navbar() {
                   key={link.href} 
                   href={link.href} 
                   onClick={() => setIsOpen(false)}
-                  className="text-4xl font-bebas text-white hover:text-accent transition-colors"
+                  className={cn(
+                    "text-4xl font-bebas transition-colors",
+                    pathname === link.href ? "text-accent" : "text-white hover:text-accent"
+                  )}
                 >
                   {link.label}
                 </Link>
@@ -104,7 +118,7 @@ export function Navbar() {
             </div>
             
             <div className="mt-auto">
-              <Button asChild className="w-full h-16 font-bebas text-2xl bg-accent text-primary">
+              <Button asChild className="w-full h-16 font-bebas text-2xl bg-accent text-primary border-none">
                 <a href="tel:+34692303131" className="flex items-center justify-center gap-4">
                   <Phone size={24} /> LLAMAR AHORA
                 </a>
