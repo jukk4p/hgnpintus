@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body className="font-body antialiased bg-background text-foreground min-h-screen flex flex-col">
+      <body className="font-body antialiased bg-background text-foreground min-h-screen flex flex-col overflow-x-hidden">
         <Navbar />
         <main className="flex-1">
           {children}

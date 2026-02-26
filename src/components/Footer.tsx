@@ -16,12 +16,13 @@ export function Footer() {
     <footer className="py-24 bg-[#111827] text-white border-t border-white/5 relative z-10">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
-          <div className="space-y-6">
+          {/* Logo y Redes - Centrado en móvil */}
+          <div className="space-y-6 text-center md:text-left">
             <h3 className="text-3xl font-bebas tracking-wider text-accent">HGNPINTURAS</h3>
-            <p className="text-white/40 text-sm leading-relaxed max-w-xs uppercase tracking-widest font-bold">
+            <p className="text-white/40 text-sm leading-relaxed max-w-xs mx-auto md:mx-0 uppercase tracking-widest font-bold">
               Más de 15 años liderando la pintura profesional y vertical en Sevilla. Calidad sin compromisos.
             </p>
-            <div className="flex gap-4">
+            <div className="flex justify-center md:justify-start gap-4">
               <Link href="#" className="p-3 bg-white/5 rounded-full hover:bg-accent hover:text-primary transition-colors">
                 <Instagram size={20} />
               </Link>
@@ -31,7 +32,8 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          {/* Navegación - Centrado en móvil */}
+          <div className="space-y-6 text-center md:text-left">
             <h4 className="text-lg font-bebas text-white tracking-widest uppercase">Navegación</h4>
             <ul className="space-y-4 text-sm font-bold text-white/40 uppercase tracking-widest">
               <li><Link href="/" className="hover:text-accent transition-colors">Inicio</Link></li>
@@ -41,7 +43,8 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-6">
+          {/* Servicios Top - Centrado en móvil */}
+          <div className="space-y-6 text-center md:text-left">
             <h4 className="text-lg font-bebas text-white tracking-widest uppercase">Servicios Top</h4>
             <ul className="space-y-4 text-sm font-bold text-white/40 uppercase tracking-widest">
               <li><Link href="/servicios" className="hover:text-accent transition-colors">Trabajos Verticales</Link></li>
@@ -51,7 +54,8 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-6">
+          {/* Contacto - Centrado en móvil */}
+          <div className="space-y-6 text-center md:text-left">
             <h4 className="text-lg font-bebas text-white tracking-widest uppercase">Contacto</h4>
             <ul className="space-y-4 text-sm font-bold text-white/40 uppercase tracking-widest">
               <li>Coria del Río, Sevilla</li>
@@ -62,11 +66,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        {/* Barra Inferior - Centrada en móvil */}
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
           <p className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em]">
             © {year || "2025"} Hermanos Gómez Novo. Todos los derechos reservados.
           </p>
-          <div className="flex gap-8 text-[10px] font-bold text-white/60 uppercase tracking-[0.3em]">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-[10px] font-bold text-white/60 uppercase tracking-[0.3em]">
             <Link 
               href="/aviso-legal" 
               className="hover:text-accent transition-colors"
