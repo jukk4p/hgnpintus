@@ -128,14 +128,14 @@ export function Navbar() {
         <AnimatePresence>
           {isOpen && (
             <motion.div 
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "100vh" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="lg:hidden fixed inset-0 top-0 left-0 w-full bg-primary flex flex-col z-[-1] overflow-hidden"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="lg:hidden fixed inset-0 top-0 left-0 w-full h-[100dvh] bg-primary z-[-1] overflow-hidden"
             >
-              <div className="flex flex-col h-full pt-32 pb-12 px-8 overflow-y-auto">
-                <div className="flex flex-col gap-6">
+              <div className="flex flex-col h-full overflow-y-auto pt-32 pb-24 px-8">
+                <div className="flex flex-col gap-6 mb-12">
                   {navLinks.map((link, index) => (
                     <motion.div
                       key={link.href}
@@ -162,19 +162,19 @@ export function Navbar() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
-                  className="mt-auto space-y-8"
+                  className="mt-auto pt-8 border-t border-white/10 space-y-8"
                 >
                   <div className="space-y-4">
                     <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">Atención Directa</p>
                     <a href="tel:+34692303131" className="flex items-center gap-4 text-white hover:text-accent transition-colors">
-                      <div className="p-4 bg-accent/10 rounded-full border border-accent/20">
-                        <Phone size={24} className="text-accent" />
+                      <div className="p-3 bg-accent/10 rounded-full border border-accent/20">
+                        <Phone size={20} className="text-accent" />
                       </div>
                       <span className="text-2xl font-bebas tracking-widest">692 303 131</span>
                     </a>
                   </div>
 
-                  <Button asChild className="w-full h-16 font-bebas text-xl bg-accent text-primary border-none rounded-none shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] active:scale-95 transition-all">
+                  <Button asChild className="w-full h-16 font-bebas text-xl bg-accent text-primary border-none rounded-none shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] active:scale-95 transition-all whitespace-normal leading-tight">
                     <Link href="/#contacto" onClick={() => setIsOpen(false)}>
                       PEDIR PRESUPUESTO GRATIS
                     </Link>
