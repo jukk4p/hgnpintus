@@ -26,20 +26,20 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="text-lg font-bebas text-white tracking-widest uppercase">Navegación</h4>
             <ul className="space-y-4 text-sm font-bold text-white/40 uppercase tracking-widest">
-              <li><Link href="/" className="hover:text-accent">Inicio</Link></li>
-              <li><Link href="/servicios" className="hover:text-accent">Servicios</Link></li>
-              <li><Link href="/proyectos" className="hover:text-accent">Proyectos</Link></li>
-              <li><Link href="/sobre-nosotros" className="hover:text-accent">Nosotros</Link></li>
+              <li><Link href="/" className="hover:text-accent transition-colors">Inicio</Link></li>
+              <li><Link href="/servicios" className="hover:text-accent transition-colors">Servicios</Link></li>
+              <li><Link href="/proyectos" className="hover:text-accent transition-colors">Proyectos</Link></li>
+              <li><Link href="/sobre-nosotros" className="hover:text-accent transition-colors">Nosotros</Link></li>
             </ul>
           </div>
 
           <div className="space-y-6">
             <h4 className="text-lg font-bebas text-white tracking-widest uppercase">Servicios Top</h4>
             <ul className="space-y-4 text-sm font-bold text-white/40 uppercase tracking-widest">
-              <li><Link href="/servicios" className="hover:text-accent">Trabajos Verticales</Link></li>
-              <li><Link href="/servicios" className="hover:text-accent">Pintura Fachadas</Link></li>
-              <li><Link href="/servicios" className="hover:text-accent">Impermeabilización</Link></li>
-              <li><Link href="/servicios" className="hover:text-accent">Suelos Epoxi</Link></li>
+              <li><Link href="/servicios" className="hover:text-accent transition-colors">Trabajos Verticales</Link></li>
+              <li><Link href="/servicios" className="hover:text-accent transition-colors">Pintura Fachadas</Link></li>
+              <li><Link href="/servicios" className="hover:text-accent transition-colors">Impermeabilización</Link></li>
+              <li><Link href="/servicios" className="hover:text-accent transition-colors">Suelos Epoxi</Link></li>
             </ul>
           </div>
 
@@ -58,10 +58,10 @@ export function Footer() {
           <p className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em]">
             © {new Date().getFullYear()} Hermanos Gómez Novo. Todos los derechos reservados.
           </p>
-          <div className="flex gap-8 text-[10px] font-bold text-white/20 uppercase tracking-[0.3em]">
-            <Link href="/aviso-legal" className="hover:text-white transition-colors">Aviso Legal</Link>
-            <Link href="/privacidad" className="hover:text-white transition-colors">Privacidad</Link>
-            <Link href="/cookies" className="hover:text-white transition-colors">Cookies</Link>
+          <div className="flex gap-8 text-[10px] font-bold text-white/40 uppercase tracking-[0.3em]">
+            <Link href="/aviso-legal" className="hover:text-accent transition-colors">Aviso Legal</Link>
+            <Link href="/privacidad" className="hover:text-accent transition-colors">Privacidad</Link>
+            <Link href="/cookies" className="hover:text-accent transition-colors">Cookies</Link>
           </div>
         </div>
       </div>
