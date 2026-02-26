@@ -1,10 +1,7 @@
+
 "use client";
 
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { WhatsAppWidget } from "@/components/WhatsAppWidget";
-import { Toaster } from "@/components/ui/toaster";
-import { Shield, Award, Clock, MapPin, HardHat, CheckCircle2 } from "lucide-react";
+import { Shield, MapPin, HardHat, CheckCircle2, Clock } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { motion } from "framer-motion";
@@ -14,8 +11,6 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen">
-      <Navbar />
-      
       <section className="pt-32 pb-24 bg-background border-b-4 border-black">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -111,10 +106,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
-      <WhatsAppWidget />
-      <Toaster />
     </main>
   );
 }

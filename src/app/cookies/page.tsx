@@ -1,9 +1,6 @@
+
 "use client";
 
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { WhatsAppWidget } from "@/components/WhatsAppWidget";
-import { Toaster } from "@/components/ui/toaster";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
@@ -14,7 +11,6 @@ export default function CookiesPage() {
 
   return (
     <main className="min-h-screen">
-      <Navbar />
       <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <motion.div 
@@ -33,7 +29,7 @@ export default function CookiesPage() {
 
               <h2 className="text-2xl font-bebas uppercase mt-12 text-primary tracking-wider">1. ¿QUÉ SON LAS COOKIES?</h2>
               <p>
-                Las cookies son pequeños archivos de texto que los sitios web que visita instalan en su ordenador o dispositivo móvil. Se utilizan ampliamente para que los sitios web funcionen, o para que lo hagan con mayor eficiencia, así como para proporcionar información a los propietarios del sitio.
+                Las cookies son pequeños archivos de texto que los sitios web que visita instalan en su ordenador o dispositivo móvil. Se utilizan ampliamente para que los sitios web pueden funcionar, o para que lo hagan con mayor eficiencia, así como para proporcionar información a los propietarios del sitio.
               </p>
 
               <h2 className="text-2xl font-bebas uppercase mt-12 text-primary tracking-wider">2. TIPOS DE COOKIES UTILIZADAS</h2>
@@ -59,9 +55,6 @@ export default function CookiesPage() {
           </motion.div>
         </div>
       </section>
-      <Footer />
-      <WhatsAppWidget />
-      <Toaster />
     </main>
   );
 }

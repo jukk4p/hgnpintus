@@ -1,9 +1,6 @@
+
 "use client";
 
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { WhatsAppWidget } from "@/components/WhatsAppWidget";
-import { Toaster } from "@/components/ui/toaster";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -55,7 +52,7 @@ const allServices = [
   {
     title: "REHABILITACIÓN FACHADAS",
     category: "Edificios",
-    description: "Reparación de grietas y pintura acrílica de larga duración. Cumplimos con la ITE para comunidades de vecinos en Sevilla y provincia con rapidez.",
+    description: "Reparación de guetas y pintura acrílica de larga duración. Cumplimos con la ITE para comunidades de vecinos en Sevilla y provincia con rapidez.",
     price: "~22€/m²",
     icon: Building2,
     imageId: "service-fachada",
@@ -89,8 +86,6 @@ const allServices = [
 export default function ServicesPage() {
   return (
     <main className="min-h-screen">
-      <Navbar />
-      
       <section className="pt-28 pb-12 md:pt-40 md:pb-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mb-16 md:mb-24">
@@ -176,10 +171,6 @@ export default function ServicesPage() {
           <p className="text-lg font-bold text-white/60">— Administrador de Fincas, Coria del Río</p>
         </div>
       </section>
-
-      <Footer />
-      <WhatsAppWidget />
-      <Toaster />
     </main>
   );
 }

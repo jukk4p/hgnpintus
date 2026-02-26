@@ -1,15 +1,11 @@
+
 "use client";
 
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { WhatsAppWidget } from "@/components/WhatsAppWidget";
-import { Toaster } from "@/components/ui/toaster";
 import { motion } from "framer-motion";
 
 export default function PrivacidadPage() {
   return (
     <main className="min-h-screen">
-      <Navbar />
       <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <motion.div 
@@ -54,9 +50,6 @@ export default function PrivacidadPage() {
           </motion.div>
         </div>
       </section>
-      <Footer />
-      <WhatsAppWidget />
-      <Toaster />
     </main>
   );
 }

@@ -1,9 +1,6 @@
+
 "use client";
 
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { WhatsAppWidget } from "@/components/WhatsAppWidget";
-import { Toaster } from "@/components/ui/toaster";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -56,8 +53,6 @@ export default function ProjectsPage() {
 
   return (
     <main className="min-h-screen">
-      <Navbar />
-      
       <section className="pt-28 pb-12 md:pt-40 md:pb-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-16">
@@ -106,10 +101,6 @@ export default function ProjectsPage() {
           </Tabs>
         </div>
       </section>
-
-      <Footer />
-      <WhatsAppWidget />
-      <Toaster />
     </main>
   );
 }
