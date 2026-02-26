@@ -8,6 +8,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function ProjectsPage() {
   const projects = [
@@ -60,21 +61,30 @@ export default function ProjectsPage() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-16">
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-5xl md:text-7xl font-bebas uppercase tracking-tighter mb-6 leading-none"
+            >
               NUESTROS <br />
               <span className="text-primary">PROYECTOS</span>
-            </h1>
-            <p className="text-xl font-bold text-secondary">
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="text-xl font-bold text-foreground/80"
+            >
               Una imagen vale más que mil palabras. Resultados reales de antes y después en Sevilla.
-            </p>
+            </motion.p>
           </div>
 
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="bg-white border-2 border-black p-1 h-auto mb-12 rounded-none flex-wrap">
-              <TabsTrigger value="all" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white">Todos</TabsTrigger>
-              <TabsTrigger value="fachadas" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white">Fachadas</TabsTrigger>
-              <TabsTrigger value="vertical" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white">Verticales</TabsTrigger>
-              <TabsTrigger value="industrial" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white">Industrial</TabsTrigger>
+            <TabsList className="bg-white border-2 border-black p-1 h-auto mb-12 rounded-none flex-wrap gap-2">
+              <TabsTrigger value="all" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Todos</TabsTrigger>
+              <TabsTrigger value="fachadas" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Fachadas</TabsTrigger>
+              <TabsTrigger value="vertical" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Verticales</TabsTrigger>
+              <TabsTrigger value="industrial" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Industrial</TabsTrigger>
             </TabsList>
 
             <TabsContent value="all" className="mt-0">
@@ -105,27 +115,31 @@ export default function ProjectsPage() {
 
 function ProjectCard({ project }: { project: any }) {
   return (
-    <div className="brutalist-card bg-white p-0 overflow-hidden flex flex-col">
-      <div className="grid grid-cols-2 gap-1 bg-black border-b-2 border-black">
+    <motion.div 
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      className="brutalist-card bg-white p-0 overflow-hidden flex flex-col group"
+    >
+      <div className="grid grid-cols-2 gap-1 bg-black border-b-2 border-black overflow-hidden">
         <div className="relative aspect-[4/5] bg-muted">
-          {project.before && <Image src={project.before} alt={project.beforeAlt} fill className="object-cover" />}
-          <div className="absolute top-2 left-2 bg-black text-white px-2 py-1 text-[10px] font-black uppercase">Antes</div>
+          {project.before && <Image src={project.before} alt={project.beforeAlt} fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />}
+          <div className="absolute top-2 left-2 bg-black text-white px-2 py-1 text-[10px] font-black uppercase z-10">Antes</div>
         </div>
         <div className="relative aspect-[4/5] bg-muted">
-          {project.after && <Image src={project.after} alt={project.afterAlt} fill className="object-cover" />}
-          <div className="absolute top-2 right-2 bg-primary text-white px-2 py-1 text-[10px] font-black uppercase">Después</div>
+          {project.after && <Image src={project.after} alt={project.afterAlt} fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />}
+          <div className="absolute top-2 right-2 bg-primary text-white px-2 py-1 text-[10px] font-black uppercase z-10">Después</div>
         </div>
       </div>
-      <div className="p-6">
-        <div className="flex justify-between items-start mb-2">
-          <h3 className="text-2xl font-black uppercase tracking-tighter">{project.title}</h3>
-          <span className="bg-accent px-2 py-1 text-[10px] font-black border-2 border-black uppercase">{project.category}</span>
+      <div className="p-8">
+        <div className="flex justify-between items-start mb-4">
+          <h3 className="text-3xl font-bebas uppercase tracking-tighter text-primary">{project.title}</h3>
+          <span className="bg-accent px-3 py-1 text-[10px] font-black border-2 border-black uppercase text-primary-foreground">{project.category}</span>
         </div>
-        <p className="font-bold text-secondary text-sm">{project.desc}</p>
-        <div className="mt-6 flex items-center text-primary font-black uppercase text-xs gap-2">
+        <p className="font-bold text-foreground/70 text-base leading-relaxed">{project.desc}</p>
+        <div className="mt-8 flex items-center text-primary font-black uppercase text-xs gap-2 group-hover:gap-4 transition-all">
           Ver detalle del proyecto <ArrowRight size={14} />
         </div>
       </div>
-    </div>
-  ); project
+    </motion.div>
+  );
 }
