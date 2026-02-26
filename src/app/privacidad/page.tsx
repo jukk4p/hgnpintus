@@ -1,6 +1,7 @@
 "use client";
 
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { Toaster } from "@/components/ui/toaster";
 import { motion } from "framer-motion";
@@ -53,6 +54,7 @@ export default function PrivacidadPage() {
           </motion.div>
         </div>
       </section>
+      <Footer />
       <WhatsAppWidget />
       <Toaster />
     </main>

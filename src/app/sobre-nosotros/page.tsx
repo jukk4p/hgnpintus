@@ -1,6 +1,7 @@
 "use client";
 
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { Toaster } from "@/components/ui/toaster";
 import { Shield, Award, Clock, MapPin, HardHat, CheckCircle2 } from "lucide-react";
@@ -111,13 +112,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <footer className="py-16 bg-primary text-white border-t-4 border-black">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-4xl font-bebas uppercase tracking-widest mb-6 text-accent">HGNPINTURAS</h3>
-          <p className="font-bold text-white/60 uppercase tracking-[0.3em] text-xs">Profesionales del color en el Aljarafe sevillano.</p>
-        </div>
-      </footer>
-
+      <Footer />
       <WhatsAppWidget />
       <Toaster />
     </main>

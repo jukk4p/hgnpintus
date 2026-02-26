@@ -1,11 +1,11 @@
 "use client";
 
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { Toaster } from "@/components/ui/toaster";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { motion } from "framer-motion";
 import { 
@@ -154,8 +154,8 @@ export default function ServicesPage() {
                     </p>
                     <div className="mt-auto pt-6 border-t-2 border-dashed border-black/10 flex justify-between items-center gap-2">
                       <div className="flex flex-col">
-                        <span className="text-[10px] font-bold text-primary/40 uppercase leading-none mb-1">Presupuesto</span>
-                        <span className="font-black text-xs uppercase text-primary tracking-tight">{service.price}</span>
+                        <span className="text-[10px] font-bold text-primary/40 uppercase leading-none mb-1">Consulta</span>
+                        <span className="font-black text-xs uppercase text-primary tracking-tight">Gratuita</span>
                       </div>
                       <Button asChild size="sm" className="rounded-none h-10 px-4 font-black text-xs shrink-0">
                         <a href="/#contacto">SOLICITAR</a>
@@ -177,18 +177,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <footer className="py-16 bg-white text-black border-t-4 border-black">
-        <div className="container mx-auto px-4 text-center space-y-8">
-          <h3 className="text-4xl font-bebas uppercase tracking-widest text-primary">HGNPINTURAS</h3>
-          <p className="text-sm font-bold text-foreground/60 uppercase tracking-widest">© {new Date().getFullYear()} Hermanos Gómez Novo. Calidad y Confianza.</p>
-          <div className="flex justify-center gap-8 pt-4 flex-wrap">
-            <Link href="/aviso-legal" className="hover:text-primary transition-colors font-black uppercase text-[10px] text-foreground/40">Aviso Legal</Link>
-            <Link href="/privacidad" className="hover:text-primary transition-colors font-black uppercase text-[10px] text-foreground/40">Privacidad</Link>
-            <Link href="/cookies" className="hover:text-primary transition-colors font-black uppercase text-[10px] text-foreground/40">Cookies</Link>
-          </div>
-        </div>
-      </footer>
-
+      <Footer />
       <WhatsAppWidget />
       <Toaster />
     </main>

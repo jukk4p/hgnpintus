@@ -1,6 +1,7 @@
 "use client";
 
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { Toaster } from "@/components/ui/toaster";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -106,6 +107,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
+      <Footer />
       <WhatsAppWidget />
       <Toaster />
     </main>
