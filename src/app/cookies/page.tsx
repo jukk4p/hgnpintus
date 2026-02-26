@@ -2,18 +2,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 export default function CookiesPage() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-    window.scrollTo(0, 0);
-  }, []);
-
-  if (!mounted) return null;
-
   return (
     <main className="min-h-screen">
       <section className="py-32 md:py-48 bg-background">

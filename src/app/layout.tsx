@@ -72,9 +72,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-body antialiased bg-background text-foreground">
+      <body className="font-body antialiased bg-background text-foreground min-h-screen flex flex-col">
         <Navbar />
-        {children}
+        <div className="flex-1">
+          {children}
+        </div>
         <Footer />
         <WhatsAppWidget />
         <Toaster />
