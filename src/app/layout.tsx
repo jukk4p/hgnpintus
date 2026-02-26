@@ -1,4 +1,3 @@
-
 import type {Metadata, Viewport} from 'next';
 import './globals.css';
 import { Navbar } from "@/components/Navbar";
@@ -27,53 +26,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Hermanos Gómez Novo Pinturas",
-    "image": "https://hnosgomeznovopinturas.es/images/logo.png",
-    "telephone": "+34692303131",
-    "email": "info@hnosgomeznovopinturas.es",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Avda. Blanca Paloma, 64",
-      "addressLocality": "Coria del Río",
-      "addressRegion": "Sevilla",
-      "postalCode": "41100",
-      "addressCountry": "ES"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.2881,
-      "longitude": -6.0572
-    },
-    "url": "https://hnosgomeznovopinturas.es",
-    "priceRange": "€€",
-    "areaServed": ["Coria del Río", "Sevilla", "Los Palacios", "Dos Hermanas", "Utrera", "Alcalá de Guadaíra"],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servicios de Pintura",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pintura de Fachadas"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Trabajos Verticales sin Andamios"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Impermeabilización de Tejados"}}
-      ]
-    }
-  };
-
   return (
-    <html lang="es" className="scroll-smooth" suppressHydrationWarning>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
+    <html lang="es" className="scroll-smooth">
       <body className="font-body antialiased bg-background text-foreground min-h-screen flex flex-col">
         <Navbar />
-        <div className="flex-1">
+        <main className="flex-1">
           {children}
-        </div>
+        </main>
         <Footer />
         <WhatsAppWidget />
         <Toaster />

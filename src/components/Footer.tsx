@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -6,7 +5,7 @@ import { Instagram, Facebook } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Footer() {
-  const [year, setYear] = useState<number>(2024);
+  const [year, setYear] = useState<number>(new Date().getFullYear());
 
   useEffect(() => {
     setYear(new Date().getFullYear());

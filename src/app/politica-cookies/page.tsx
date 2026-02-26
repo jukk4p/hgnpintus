@@ -1,6 +1,3 @@
-
-"use client";
-
 export default function PoliticaCookiesPage() {
   return (
     <main className="min-h-screen bg-background">
