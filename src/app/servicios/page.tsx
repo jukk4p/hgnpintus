@@ -65,7 +65,7 @@ const allServices = [
     title: "TRABAJOS VERTICALES",
     category: "Sin Andamios",
     description: "Acceso seguro mediante cuerdas para zonas difíciles. Pintura en altura con técnicos certificados IRATA, máxima seguridad y ahorro en costes de andamiaje.",
-    price: "Presupuesto Gratis",
+    price: "SIN COSTE",
     icon: Mountain,
     imageId: "service-vertical",
   },
@@ -73,7 +73,7 @@ const allServices = [
     title: "REFORMAS RÁPIDAS",
     category: "Mantenimiento",
     description: "Intervenciones inmediatas para humedades, parches y alisados urgentes. Presupuestos en menos de 24h para soluciones rápidas en su local o vivienda.",
-    price: "Económico",
+    price: "ECONÓMICO",
     icon: Zap,
     imageId: "service-reformas",
   },
@@ -81,7 +81,7 @@ const allServices = [
     title: "MANTENIMIENTO COMUNIDADES",
     category: "Servicio Continuo",
     description: "Planes de mantenimiento para portales, escaleras y zonas comunes. Trabajamos con orden y limpieza sin interrupciones para el bienestar vecinal.",
-    price: "Tarifa Plana",
+    price: "TARIFA PLANA",
     icon: Users,
     imageId: "service-comunidades",
   },
@@ -153,10 +153,13 @@ export default function ServicesPage() {
                     <p className="text-sm font-bold text-foreground/70 leading-relaxed mb-8 line-clamp-4">
                       {service.description}
                     </p>
-                    <div className="mt-auto pt-6 border-t-2 border-dashed border-black/10 flex justify-between items-center">
-                      <span className="font-black text-xs uppercase text-primary/60 tracking-tight">{service.price}</span>
-                      <Button asChild size="sm" className="rounded-none h-10 px-6 font-black text-xs">
-                        <a href="/#contacto">Presupuesto</a>
+                    <div className="mt-auto pt-6 border-t-2 border-dashed border-black/10 flex justify-between items-center gap-2">
+                      <div className="flex flex-col">
+                        <span className="text-[10px] font-bold text-primary/40 uppercase leading-none mb-1">Presupuesto</span>
+                        <span className="font-black text-xs uppercase text-primary tracking-tight">{service.price}</span>
+                      </div>
+                      <Button asChild size="sm" className="rounded-none h-10 px-4 font-black text-xs shrink-0">
+                        <a href="/#contacto">SOLICITAR</a>
                       </Button>
                     </div>
                   </div>
