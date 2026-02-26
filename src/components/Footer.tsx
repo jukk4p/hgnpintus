@@ -80,7 +80,7 @@ export function Footer() {
               Privacidad
             </Link>
             <Link 
-              href="/cookies" 
+              href="/politica-cookies" 
               className="hover:text-accent transition-colors"
             >
               Cookies

@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -55,10 +58,6 @@
   font-family: 'Bebas Neue', sans-serif;
 }
 
-.font-playfair {
-  font-family: 'Playfair Display', serif;
-}
-
 .texture-overlay {
   position: relative;
 }
@@ -76,12 +75,17 @@
   background: linear-gradient(to right, rgba(26, 26, 46, 0.9) 0%, rgba(26, 26, 46, 0.4) 100%);
 }
 
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
 }
