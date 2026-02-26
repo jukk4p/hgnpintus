@@ -2,21 +2,26 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function CookiesPage() {
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
+    setMounted(true);
     window.scrollTo(0, 0);
   }, []);
 
+  if (!mounted) return null;
+
   return (
     <main className="min-h-screen">
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-32 md:py-48 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="brutalist-card bg-white p-8 md:p-12"
+            className="brutalist-card bg-white p-8 md:p-12 shadow-2xl"
           >
             <h1 className="text-4xl md:text-6xl font-bebas uppercase tracking-tighter mb-8 border-b-4 border-primary inline-block text-primary">
               POLÍTICA DE <span className="text-accent">COOKIES</span>

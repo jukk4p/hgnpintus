@@ -1,12 +1,16 @@
+
 "use client";
 
 import Link from "next/link";
 import { Instagram, Facebook } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const [year, setYear] = useState<number>(2024);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="py-24 bg-[#111827] text-white border-t border-white/5">
@@ -60,26 +64,23 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em]">
-            © {new Date().getFullYear()} Hermanos Gómez Novo. Todos los derechos reservados.
+            © {year} Hermanos Gómez Novo. Todos los derechos reservados.
           </p>
           <div className="flex gap-8 text-[10px] font-bold text-white/60 uppercase tracking-[0.3em]">
             <Link 
               href="/aviso-legal" 
-              onClick={scrollToTop}
               className="hover:text-accent transition-colors"
             >
               Aviso Legal
             </Link>
             <Link 
               href="/privacidad" 
-              onClick={scrollToTop}
               className="hover:text-accent transition-colors"
             >
               Privacidad
             </Link>
             <Link 
               href="/cookies" 
-              onClick={scrollToTop}
               className="hover:text-accent transition-colors"
             >
               Cookies
