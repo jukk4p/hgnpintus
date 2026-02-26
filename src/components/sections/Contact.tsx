@@ -47,7 +47,7 @@ export function Contact() {
         <div className="absolute inset-0 bg-primary/80 backdrop-blur-sm" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           
           <div className="space-y-8 md:space-y-12">
@@ -91,7 +91,7 @@ export function Contact() {
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="bg-white p-6 md:p-16 rounded-3xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)]"
+            className="bg-white p-5 sm:p-8 md:p-16 rounded-3xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)]"
           >
             <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -131,7 +131,11 @@ export function Contact() {
                 <Textarea id="message" required className="bg-secondary/50 border-none min-h-[120px] rounded-xl text-primary font-bold placeholder:text-primary/20" placeholder="Háblanos de lo que necesitas..." />
               </div>
 
-              <Button type="submit" disabled={loading} className="w-full h-16 md:h-20 text-sm md:text-xl font-bold uppercase tracking-widest bg-[#D4581A] hover:bg-[#D4581A]/90 text-white rounded-xl shadow-2xl transition-all hover:scale-[1.02]">
+              <Button 
+                type="submit" 
+                disabled={loading} 
+                className="w-full h-16 md:h-20 text-[11px] sm:text-base md:text-xl font-bold uppercase tracking-tight sm:tracking-widest bg-[#D4581A] hover:bg-[#D4581A]/90 text-white rounded-xl shadow-2xl transition-all hover:scale-[1.02] whitespace-normal leading-tight px-4"
+              >
                 {loading ? "PROCESANDO..." : "SOLICITAR MI PRESUPUESTO GRATIS →"}
               </Button>
             </form>
