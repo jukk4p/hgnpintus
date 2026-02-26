@@ -3,8 +3,8 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
-import { useState, useRef } from "react";
+import { Menu, X, Phone, ArrowRight } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -17,13 +17,21 @@ export function Navbar() {
   const { scrollY } = useScroll();
   const lastScrollY = useRef(0);
 
+  // Bloquear scroll cuando el menú móvil está abierto
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isOpen]);
+
   // Lógica de Navbar Inteligente
   useMotionValueEvent(scrollY, "change", (latest) => {
     const direction = latest > lastScrollY.current ? "down" : "up";
     const threshold = 150;
 
     if (pathname === "/") {
-      // Comportamiento en HOME
       if (latest < 50) {
         setIsVisible(true);
         setIsScrolled(false);
@@ -34,7 +42,6 @@ export function Navbar() {
         setIsScrolled(true);
       }
     } else {
-      // Comportamiento en OTRAS PÁGINAS (siempre sólida pero se oculta al bajar)
       setIsScrolled(true);
       if (latest < 50) {
         setIsVisible(true);
@@ -60,11 +67,11 @@ export function Navbar() {
     <>
       <motion.nav
         initial={{ y: 0 }}
-        animate={{ y: isVisible ? 0 : -100 }}
+        animate={{ y: isVisible || isOpen ? 0 : -100 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
         className={cn(
-          "fixed top-0 z-50 w-full transition-all duration-500",
-          isScrolled 
+          "fixed top-0 z-[60] w-full transition-all duration-500",
+          isScrolled || isOpen
             ? "bg-primary/95 backdrop-blur-md py-3 shadow-2xl border-b border-accent/20" 
             : "bg-transparent py-6"
         )}
@@ -109,52 +116,74 @@ export function Navbar() {
             
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 text-white hover:text-accent transition-colors"
-              aria-label="Menu"
+              className="lg:hidden p-2 text-white hover:text-accent transition-all active:scale-90"
+              aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
             >
               {isOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu Overlay */}
         <AnimatePresence>
           {isOpen && (
             <motion.div 
-              initial={{ opacity: 0, x: "100%" }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="lg:hidden fixed inset-0 z-[60] bg-primary flex flex-col p-12"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "100vh" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="lg:hidden fixed inset-0 top-0 left-0 w-full bg-primary flex flex-col z-[-1] overflow-hidden"
             >
-              <div className="flex justify-between items-center mb-16">
-                <span className="text-2xl font-bebas text-white">HGNPINTURAS</span>
-                <button onClick={() => setIsOpen(false)} className="text-white"><X size={32} /></button>
+              <div className="flex flex-col h-full pt-32 pb-12 px-8 overflow-y-auto">
+                <div className="flex flex-col gap-6">
+                  {navLinks.map((link, index) => (
+                    <motion.div
+                      key={link.href}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.1 + index * 0.1 }}
+                    >
+                      <Link 
+                        href={link.href} 
+                        onClick={() => setIsOpen(false)}
+                        className={cn(
+                          "flex items-center justify-between text-5xl font-bebas transition-colors tracking-tight",
+                          pathname === link.href ? "text-accent" : "text-white hover:text-accent"
+                        )}
+                      >
+                        {link.label}
+                        <ArrowRight size={32} className={cn("transition-opacity", pathname === link.href ? "opacity-100" : "opacity-20")} />
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+                
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                  className="mt-auto space-y-8"
+                >
+                  <div className="space-y-4">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">Atención Directa</p>
+                    <a href="tel:+34692303131" className="flex items-center gap-4 text-white hover:text-accent transition-colors">
+                      <div className="p-4 bg-accent/10 rounded-full border border-accent/20">
+                        <Phone size={24} className="text-accent" />
+                      </div>
+                      <span className="text-2xl font-bebas tracking-widest">692 303 131</span>
+                    </a>
+                  </div>
+
+                  <Button asChild className="w-full h-16 font-bebas text-xl bg-accent text-primary border-none rounded-none shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] active:scale-95 transition-all">
+                    <Link href="/#contacto" onClick={() => setIsOpen(false)}>
+                      PEDIR PRESUPUESTO GRATIS
+                    </Link>
+                  </Button>
+                </motion.div>
               </div>
-              
-              <div className="flex flex-col gap-8">
-                {navLinks.map((link) => (
-                  <Link 
-                    key={link.href} 
-                    href={link.href} 
-                    onClick={() => setIsOpen(false)}
-                    className={cn(
-                      "text-5xl font-bebas transition-colors tracking-widest",
-                      pathname === link.href ? "text-accent" : "text-white hover:text-accent"
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-              
-              <div className="mt-auto">
-                <Button asChild className="w-full h-20 font-bebas text-2xl bg-accent text-primary border-none rounded-none">
-                  <a href="tel:+34692303131" className="flex items-center justify-center gap-4">
-                    <Phone size={24} /> LLAMAR AHORA
-                  </a>
-                </Button>
-              </div>
+
+              {/* Elementos decorativos de fondo */}
+              <div className="absolute bottom-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -mb-32 -mr-32 pointer-events-none" />
             </motion.div>
           )}
         </AnimatePresence>
