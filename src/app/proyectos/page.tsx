@@ -75,7 +75,7 @@ export default function ProjectsPage() {
           </div>
 
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="bg-white border-2 border-black p-1 h-auto mb-12 rounded-none flex flex-wrap justify-center gap-2">
+            <TabsList className="bg-white border-2 border-black p-1 h-auto mb-12 rounded-none flex flex-wrap justify-center gap-2 w-fit mx-auto">
               <TabsTrigger value="all" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Todos</TabsTrigger>
               <TabsTrigger value="fachadas" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Fachadas</TabsTrigger>
               <TabsTrigger value="vertical" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Verticales</TabsTrigger>

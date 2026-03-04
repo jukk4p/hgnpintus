@@ -14,10 +14,10 @@ export default function AboutPage() {
       <section className="pt-32 pb-24 bg-background border-b-4 border-black">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              className="space-y-8"
+              className="space-y-8 text-center lg:text-left"
             >
               <h1 className="text-5xl md:text-8xl font-bebas uppercase tracking-tighter leading-[0.9] text-primary">
                 MÁS DE <span className="text-accent">20 AÑOS</span><br />
@@ -39,8 +39,8 @@ export default function AboutPage() {
                 </div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl bg-primary"
@@ -89,8 +89,8 @@ export default function AboutPage() {
                 icon: CheckCircle2
               }
             ].map((item, i) => (
-              <motion.div 
-                key={i} 
+              <motion.div
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
