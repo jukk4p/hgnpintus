@@ -1,107 +1,106 @@
-
 {
   "placeholderImages": [
     {
       "id": "hero-vertical",
-      "description": "Técnico especialista en trabajos verticales realizando pintura de fachada en Sevilla Hnos Gómez Novo",
-      "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
-      "imageHint": "pintor vertical"
+      "description": "Pintura profesional de alta gama y trabajos verticales HGN Pinturas",
+      "imageUrl": "/images/hero.png",
+      "imageHint": "pintor vertical premium"
     },
     {
       "id": "service-general",
-      "description": "Pintura general interior y exterior Hnos Gómez Novo Coria del Río",
-      "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
-      "imageHint": "pintura interior"
+      "description": "Pintura general de interiores con acabados impecables de alta gama",
+      "imageUrl": "/images/service-general-new.png",
+      "imageHint": "pintura interior premium"
     },
     {
       "id": "service-industrial",
-      "description": "Pintura industrial de naves y suelos epoxi Hnos Gómez Novo Sevilla",
-      "imageUrl": "/images/services/02-pintura-industrial-nave-fabrica.jpg",
-      "imageHint": "pintura industrial"
+      "description": "Soluciones de pintura industrial y pavimentos epoxi de alta resistencia",
+      "imageUrl": "/images/p4-after.png",
+      "imageHint": "pintura industrial warehouse"
     },
     {
       "id": "service-decorativa",
-      "description": "Pintura decorativa y alta decoración profesional Hnos Gómez Novo Coria del Río",
-      "imageUrl": "/images/services/03-pintura-decorativa-efectos-pared.jpg",
+      "description": "Alta decoración, estucos y acabados artísticos personalizados",
+      "imageUrl": "/images/decorative.png",
       "imageHint": "pintura decorativa"
     },
     {
       "id": "service-impermeabilizacion",
-      "description": "Impermeabilización de tejados y terrazas con garantía Hnos Gómez Novo Sevilla",
-      "imageUrl": "/images/services/04-impermeabilizacion-tejado-terraza.jpg",
-      "imageHint": "impermeabilizacion sevilla"
+      "description": "Impermeabilización técnica y protección total contra filtraciones",
+      "imageUrl": "/images/p3-after.png",
+      "imageHint": "impermeabilizacion azotea"
     },
     {
       "id": "service-fachada",
-      "description": "Rehabilitación de fachadas y pintura exterior de edificios Hnos Gómez Novo Coria del Río",
-      "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
-      "imageHint": "rehabilitacion fachadas"
+      "description": "Rehabilitación integral de fachadas con acabados duraderos y estéticos",
+      "imageUrl": "/images/p1-after.png",
+      "imageHint": "rehabilitacion fachadas premium"
     },
     {
       "id": "service-vertical",
-      "description": "Trabajos verticales y pintura en altura sin andamios Hnos Gómez Novo Sevilla",
-      "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
-      "imageHint": "trabajos verticales"
+      "description": "Trabajos verticales seguros y eficientes sin necesidad de andamios",
+      "imageUrl": "/images/p2-after.png",
+      "imageHint": "trabajos verticales altura"
     },
     {
       "id": "service-reformas",
-      "description": "Reformas rápidas y alisado de paredes profesional Hnos Gómez Novo Coria del Río",
-      "imageUrl": "/images/services/07-reformas-rapidas-reparaciones.jpg",
-      "imageHint": "reformas pintura"
+      "description": "Reformas de pintura rápidas, parches y alisado de paredes profesional",
+      "imageUrl": "/images/interior.png",
+      "imageHint": "reformas pintura rapida"
     },
     {
       "id": "service-comunidades",
-      "description": "Mantenimiento de pintura en comunidades de vecinos Hnos Gómez Novo Sevilla",
-      "imageUrl": "/images/services/08-mantenimiento-comunidades-pasillo.jpg",
-      "imageHint": "mantenimiento comunidades"
+      "description": "Mantenimiento integral y planes personalizados para comunidades de propietarios",
+      "imageUrl": "/images/gallery-1.png",
+      "imageHint": "mantenimiento comunidades sevilla"
     },
     {
       "id": "gallery1",
-      "description": "Rehabilitación integral de fachada en Sevilla Hnos Gómez Novo",
-      "imageUrl": "/images/services/05-rehabilitacion-fachadas-edificio.jpg",
-      "imageHint": "fachada sevilla"
+      "description": "Respeto por el detalle en cada proyecto de pintura",
+      "imageUrl": "/images/gallery-1.png",
+      "imageHint": "detalle pintura"
     },
     {
       "id": "gallery2",
-      "description": "Pintura técnica en trabajos verticales Coria del Río Hnos Gómez Novo",
-      "imageUrl": "/images/services/06-trabajos-verticales-altura-cuerda.jpg",
-      "imageHint": "pintura vertical"
+      "description": "Elegancia y sobriedad en dormitorios modernos",
+      "imageUrl": "/images/gallery-2.png",
+      "imageHint": "dormitorio premium"
     },
     {
       "id": "gallery3",
-      "description": "Impermeabilización técnica de azotea en Sevilla Hnos Gómez Novo",
-      "imageUrl": "/images/services/04-impermeabilizacion-tejado-terraza.jpg",
-      "imageHint": "impermeabilizacion"
+      "description": "Acabados profesionales en salones contemporáneos",
+      "imageUrl": "/images/gallery-1.png",
+      "imageHint": "salon contemporaneo"
     },
     {
       "id": "gallery4",
-      "description": "Acabado de alta decoración en interiores Hnos Gómez Novo Coria del Río",
-      "imageUrl": "/images/services/03-pintura-decorativa-efectos-pared.jpg",
-      "imageHint": "pintura interior"
+      "description": "Texturas y efectos de alta decoración",
+      "imageUrl": "/images/decorative.png",
+      "imageHint": "textura decorativa"
     },
     {
       "id": "gallery5",
-      "description": "Pintura de suelos industriales epoxi Sevilla Hnos Gómez Novo",
-      "imageUrl": "/images/services/02-pintura-industrial-nave-fabrica.jpg",
-      "imageHint": "pintura nave"
+      "description": "Eficiencia en exteriores y fachadas",
+      "imageUrl": "/images/exterior.png",
+      "imageHint": "pintura exterior"
     },
     {
       "id": "gallery6",
-      "description": "Mantenimiento profesional de comunidades Sevilla Hnos Gómez Novo",
-      "imageUrl": "/images/services/08-mantenimiento-comunidades-pasillo.jpg",
-      "imageHint": "comunidades sevilla"
+      "description": "Asesoramiento personalizado en color",
+      "imageUrl": "/images/consultation.png",
+      "imageHint": "consultoria color"
     },
     {
       "id": "gallery7",
-      "description": "Alisado de paredes y pintura de calidad Hnos Gómez Novo Coria del Río",
-      "imageUrl": "/images/services/01-pintura-general-interior-exterior.jpg",
+      "description": "Preparación de superficies y alisado",
+      "imageUrl": "/images/interior.png",
       "imageHint": "alisado paredes"
     },
     {
       "id": "gallery8",
-      "description": "Reparación de paramentos exteriores Hnos Gómez Novo Sevilla",
-      "imageUrl": "/images/services/07-reformas-rapidas-reparaciones.jpg",
-      "imageHint": "reformas pintura"
+      "description": "Calidad garantizada en cada brochazo",
+      "imageUrl": "/images/gallery-2.png",
+      "imageHint": "calidad pintura"
     }
   ]
 }

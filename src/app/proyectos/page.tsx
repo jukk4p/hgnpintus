@@ -14,40 +14,40 @@ export default function ProjectsPage() {
       category: "fachadas",
       title: "Rehabilitación en Coria",
       desc: "Limpieza y pintura acrílica en bloque de viviendas.",
-      before: PlaceHolderImages.find(i => i.id === "gallery1")?.imageUrl,
-      after: PlaceHolderImages.find(i => i.id === "gallery7")?.imageUrl,
-      beforeAlt: "Estado inicial de fachada en Coria del Río antes de la pintura Hnos Gómez Novo",
-      afterAlt: "Pintura general interior y exterior Hnos Gómez Novo Coria del Río - Resultado Final"
+      before: "/images/p1-before.png",
+      after: "/images/p1-after.png",
+      beforeAlt: "Estado inicial de fachada con grietas",
+      afterAlt: "Fachada rehabilitada con acabado premium"
     },
     {
       id: "p2",
       category: "vertical",
       title: "Torre Residencial",
       desc: "Reparación de cornisas mediante trabajos verticales.",
-      before: PlaceHolderImages.find(i => i.id === "gallery2")?.imageUrl,
-      after: PlaceHolderImages.find(i => i.id === "gallery6")?.imageUrl,
-      beforeAlt: "Preparación de trabajos verticales en torre Sevilla Hnos Gómez Novo",
-      afterAlt: "Mantenimiento de pintura en comunidades de vecinos Hnos Gómez Novo Sevilla"
+      before: "/images/p2-before.png",
+      after: "/images/p2-after.png",
+      beforeAlt: "Cornisa deteriorada con óxido",
+      afterAlt: "Reparación técnica en altura finalizada"
     },
     {
       id: "p3",
       category: "impermeabilizacion",
       title: "Azotea Aljarafe",
       desc: "Aplicación de poliuretano sobre baldosín catalán.",
-      before: PlaceHolderImages.find(i => i.id === "gallery3")?.imageUrl,
-      after: PlaceHolderImages.find(i => i.id === "gallery8")?.imageUrl,
-      beforeAlt: "Filtraciones en azotea antes de impermeabilizar Hnos Gómez Novo Sevilla",
-      afterAlt: "Impermeabilización de tejados y terrazas con garantía Hnos Gómez Novo Sevilla"
+      before: "/images/p3-before.png",
+      after: "/images/p3-after.png",
+      beforeAlt: "Azotea antigua con filtraciones",
+      afterAlt: "Impermeabilización con poliuretano gris"
     },
     {
-        id: "p4",
-        category: "industrial",
-        title: "Nave Industrial",
-        desc: "Pintura epoxi en suelos de alta resistencia.",
-        before: PlaceHolderImages.find(i => i.id === "gallery5")?.imageUrl,
-        after: PlaceHolderImages.find(i => i.id === "gallery4")?.imageUrl,
-        beforeAlt: "Suelo industrial deteriorado en Sevilla Hnos Gómez Novo",
-        afterAlt: "Pintura industrial de naves y suelos epoxi Hnos Gómez Novo Sevilla"
+      id: "p4",
+      category: "industrial",
+      title: "Nave Industrial",
+      desc: "Pintura epoxi en suelos de alta resistencia.",
+      before: "/images/p4-before.png",
+      after: "/images/p4-after.png",
+      beforeAlt: "Suelo industrial deteriorado",
+      afterAlt: "Acabado epoxi de alta resistencia"
     }
   ];
 
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
       <section className="pt-28 pb-12 md:pt-40 md:pb-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-16">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl md:text-7xl font-bebas uppercase tracking-tighter mb-6 leading-tight md:leading-none"
@@ -64,7 +64,7 @@ export default function ProjectsPage() {
               NUESTROS <br />
               <span className="text-primary">PROYECTOS</span>
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -107,7 +107,7 @@ export default function ProjectsPage() {
 
 function ProjectCard({ project }: { project: any }) {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       className="brutalist-card bg-white p-0 overflow-hidden flex flex-col group"
