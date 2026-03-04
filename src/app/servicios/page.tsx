@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { motion } from "framer-motion";
-import { 
-  Brush, 
-  Building2, 
-  Palette, 
-  Droplets, 
-  Mountain, 
-  Zap, 
-  Users, 
-  Hammer 
+import {
+  Brush,
+  Building2,
+  Palette,
+  Droplets,
+  Mountain,
+  Zap,
+  Users,
+  Hammer
 } from "lucide-react";
 
 const allServices = [
@@ -88,8 +88,8 @@ export default function ServicesPage() {
     <main className="min-h-screen">
       <section className="pt-28 pb-12 md:pt-40 md:pb-32 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mb-16 md:mb-24">
-            <motion.h1 
+          <div className="max-w-4xl mx-auto mb-16 md:mb-24 text-center">
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-8xl font-bebas uppercase tracking-tighter mb-8 leading-tight md:leading-[0.9] text-primary"
@@ -97,11 +97,11 @@ export default function ServicesPage() {
               NUESTROS SERVICIOS <br />
               <span className="text-accent">PROFESIONALES</span>
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-lg md:text-2xl font-bold text-foreground/80"
+              className="text-lg md:text-2xl font-bold text-foreground/80 max-w-3xl mx-auto"
             >
               Especialistas en Sevilla con más de 20 años de trayectoria. Garantía de 2 años en todos nuestros trabajos certificada por escrito.
             </motion.p>
@@ -112,8 +112,8 @@ export default function ServicesPage() {
               const Icon = service.icon;
               const img = PlaceHolderImages.find(i => i.id === service.imageId);
               return (
-                <motion.div 
-                  key={index} 
+                <motion.div
+                  key={index}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
@@ -134,7 +134,7 @@ export default function ServicesPage() {
                       <Icon size={20} className="text-accent md:w-6 md:h-6" />
                     </div>
                   </div>
-                  
+
                   <div className="flex-1 flex flex-col px-6 pb-8">
                     <div className="mb-4">
                       <span className="text-[10px] font-black uppercase text-primary tracking-widest bg-primary/5 px-2 py-1 border border-primary/10">

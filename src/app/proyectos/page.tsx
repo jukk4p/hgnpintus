@@ -55,27 +55,27 @@ export default function ProjectsPage() {
     <main className="min-h-screen">
       <section className="pt-28 pb-12 md:pt-40 md:pb-32 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mb-16">
+          <div className="max-w-4xl mx-auto mb-16 text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-bebas uppercase tracking-tighter mb-6 leading-tight md:leading-none"
+              className="text-5xl md:text-8xl font-bebas uppercase tracking-tighter mb-8 leading-tight md:leading-[0.9] text-primary"
             >
               NUESTROS <br />
-              <span className="text-primary">PROYECTOS</span>
+              <span className="text-accent">PROYECTOS</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-xl font-bold text-foreground/80"
+              className="text-xl md:text-2xl font-bold text-foreground/80 max-w-2xl mx-auto"
             >
               Una imagen vale más que mil palabras. Resultados reales de antes y después en Sevilla.
             </motion.p>
           </div>
 
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="bg-white border-2 border-black p-1 h-auto mb-12 rounded-none flex-wrap gap-2">
+            <TabsList className="bg-white border-2 border-black p-1 h-auto mb-12 rounded-none flex flex-wrap justify-center gap-2">
               <TabsTrigger value="all" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Todos</TabsTrigger>
               <TabsTrigger value="fachadas" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Fachadas</TabsTrigger>
               <TabsTrigger value="vertical" className="rounded-none font-black uppercase text-xs px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-white border-2 border-transparent data-[state=active]:border-black transition-all">Verticales</TabsTrigger>
