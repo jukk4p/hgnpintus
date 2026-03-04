@@ -14,16 +14,9 @@ export function Gallery() {
   const [filter, setFilter] = useState("Todos");
   const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith("gallery"));
 
-  const filteredImages = filter === "Todos" 
-    ? galleryImages 
-    : galleryImages.filter(img => {
-        // En una app real esto vendría de los datos del proyecto
-        if (filter === "Fachadas") return img.id === "gallery1" || img.id === "gallery7";
-        if (filter === "Verticales") return img.id === "gallery2" || img.id === "gallery6";
-        if (filter === "Impermeabilización") return img.id === "gallery3";
-        if (filter === "Industrial") return img.id === "gallery5";
-        return true;
-      });
+  const filteredImages = filter === "Todos"
+    ? galleryImages
+    : galleryImages.filter(img => img.category === filter);
 
   return (
     <section id="galeria" className="py-32 bg-white">
@@ -37,17 +30,16 @@ export function Gallery() {
               Resultados reales que hablan por sí solos. Transformamos espacios con precisión técnica.
             </p>
           </div>
-          
+
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all ${
-                  filter === cat 
-                    ? "bg-primary text-accent shadow-xl scale-105" 
+                className={`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all ${filter === cat
+                    ? "bg-primary text-accent shadow-xl scale-105"
                     : "bg-secondary text-primary/60 hover:bg-secondary/80"
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -55,7 +47,7 @@ export function Gallery() {
           </div>
         </div>
 
-        <motion.div 
+        <motion.div
           layout
           className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6"
         >

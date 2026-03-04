@@ -56,51 +56,59 @@
     },
     {
       "id": "gallery1",
-      "description": "Respeto por el detalle en cada proyecto de pintura",
+      "description": "Portales y zonas comunes impecables",
       "imageUrl": "/images/gallery-1.png",
-      "imageHint": "detalle pintura"
+      "imageHint": "mantenimiento comunidades",
+      "category": "Interiores"
     },
     {
       "id": "gallery2",
-      "description": "Elegancia y sobriedad en dormitorios modernos",
+      "description": "Dormitorios con acabados de alta gama",
       "imageUrl": "/images/gallery-2.png",
-      "imageHint": "dormitorio premium"
+      "imageHint": "dormitorio premium",
+      "category": "Interiores"
     },
     {
       "id": "gallery3",
-      "description": "Acabados profesionales en salones contemporáneos",
-      "imageUrl": "/images/gallery-1.png",
-      "imageHint": "salon contemporaneo"
+      "description": "Impermeabilización técnica de cubiertas",
+      "imageUrl": "/images/p3-after.png",
+      "imageHint": "impermeabilizacion",
+      "category": "Impermeabilización"
     },
     {
       "id": "gallery4",
-      "description": "Texturas y efectos de alta decoración",
-      "imageUrl": "/images/decorative.png",
-      "imageHint": "textura decorativa"
+      "description": "Pavimentos epoxi en sector industrial",
+      "imageUrl": "/images/p4-after.png",
+      "imageHint": "suelo industrial",
+      "category": "Industrial"
     },
     {
       "id": "gallery5",
-      "description": "Eficiencia en exteriores y fachadas",
-      "imageUrl": "/images/exterior.png",
-      "imageHint": "pintura exterior"
+      "description": "Rehabilitación integral de edificios",
+      "imageUrl": "/images/p1-after.png",
+      "imageHint": "fachada sevilla",
+      "category": "Fachadas"
     },
     {
       "id": "gallery6",
-      "description": "Asesoramiento personalizado en color",
+      "description": "Consultoría de color personalizada",
       "imageUrl": "/images/consultation.png",
-      "imageHint": "consultoria color"
+      "imageHint": "consultoria color",
+      "category": "Interiores"
     },
     {
       "id": "gallery7",
-      "description": "Preparación de superficies y alisado",
-      "imageUrl": "/images/interior.png",
-      "imageHint": "alisado paredes"
+      "description": "Acabados de pintura en fachadas",
+      "imageUrl": "/images/exterior.png",
+      "imageHint": "pintura exterior",
+      "category": "Fachadas"
     },
     {
       "id": "gallery8",
-      "description": "Calidad garantizada en cada brochazo",
-      "imageUrl": "/images/gallery-2.png",
-      "imageHint": "calidad pintura"
+      "description": "Especialistas en trabajos verticales",
+      "imageUrl": "/images/p2-after.png",
+      "imageHint": "pintura vertical",
+      "category": "Verticales"
     }
   ]
 }
