@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+.git
+.idx
+*.tsbuildinfo
+next-env.d.ts
+*.txt
