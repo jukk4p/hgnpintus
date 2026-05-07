@@ -2,6 +2,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { motion } from "framer-motion";
@@ -153,7 +154,7 @@ export default function ServicesPage() {
                         <span className="font-black text-xs uppercase text-primary tracking-tight">Gratuita</span>
                       </div>
                       <Button asChild size="sm" className="rounded-none h-10 px-4 font-black text-xs shrink-0">
-                        <a href="/#contacto">SOLICITAR</a>
+                        <Link href="/#contacto">SOLICITAR</Link>
                       </Button>
                     </div>
                   </div>

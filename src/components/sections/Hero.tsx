@@ -4,6 +4,7 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowDown, Star, CheckCircle2, Trophy, Clock, Users } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -74,10 +75,10 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-6 pt-4"
           >
             <Button asChild size="lg" className="h-16 px-10 bg-[#D4581A] hover:bg-[#D4581A]/90 text-white font-bold rounded-sm shadow-2xl transition-all hover:scale-105 border-none">
-              <a href="#contacto">SOLICITAR PRESUPUESTO GRATIS</a>
+              <Link href="#contacto">SOLICITAR PRESUPUESTO GRATIS</Link>
             </Button>
             <Button asChild size="lg" variant="ghost" className="h-16 px-10 border-2 border-white text-white hover:bg-white/10 hover:text-white font-bold rounded-sm shadow-none">
-              <a href="/servicios">VER NUESTROS TRABAJOS</a>
+              <Link href="/servicios">VER NUESTROS TRABAJOS</Link>
             </Button>
           </motion.div>
         </div>
