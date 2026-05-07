@@ -67,7 +67,7 @@ export default function AboutPage() {
             <h2 className="text-4xl md:text-6xl font-bebas uppercase tracking-tighter mb-8 text-primary">Seguridad y Confianza</h2>
             <div className="w-20 h-1 bg-accent mx-auto mb-8" />
             <p className="text-lg md:text-2xl font-bold text-foreground/70 italic font-serif">
-              "No solo pintamos, rehabilitamos con la tranquilidad de que su edificio está en las mejores manos."
+              &quot;No solo pintamos, rehabilitamos con la tranquilidad de que su edificio está en las mejores manos.&quot;
             </p>
           </div>
 

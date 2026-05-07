@@ -52,7 +52,7 @@ export function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-lg font-medium text-primary/80 italic mb-8">"{t.text}"</p>
+              <p className="text-lg font-medium text-primary/80 italic mb-8">&quot;{t.text}&quot;</p>
               
               <div className="flex items-center gap-4">
                 <Avatar className="h-12 w-12 border-2 border-accent/20">

@@ -167,7 +167,7 @@ export default function ServicesPage() {
       <section className="py-24 bg-primary text-white border-y-4 border-black relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-accent/5 -skew-y-3 translate-y-12" />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-bebas uppercase mb-8 leading-tight text-accent italic">"Trabajo impecable, rápidos y muy limpios en el mantenimiento de nuestro bloque."</h2>
+          <h2 className="text-3xl md:text-5xl font-bebas uppercase mb-8 leading-tight text-accent italic">&quot;Trabajo impecable, rápidos y muy limpios en el mantenimiento de nuestro bloque.&quot;</h2>
           <p className="text-lg font-bold text-white/60">— Administrador de Fincas, Coria del Río</p>
         </div>
       </section>
