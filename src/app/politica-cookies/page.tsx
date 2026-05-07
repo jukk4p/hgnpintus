@@ -43,7 +43,7 @@ export default function PoliticaCookiesPage() {
               </p>
               <div className="bg-primary/5 p-6 border-2 border-dashed border-primary/20 rounded-xl mt-8">
                 <p className="text-xs font-bold uppercase tracking-widest text-primary/60">
-                  Para más información sobre la configuración de las cookies en su navegador, consulte el menú de "Ayuda" del mismo.
+                  Para más información sobre la configuración de las cookies en su navegador, consulte el menú de &quot;Ayuda&quot; del mismo.
                 </p>
               </div>
             </div>
