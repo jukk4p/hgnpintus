@@ -43,3 +43,11 @@ next-env.d.ts
 # firebase
 firebase-debug.log
 firestore-debug.log
+
+# garbage
+.idx/
+docs/
+.modified
+.DS_Store
+Thumbs.db
+*.log
